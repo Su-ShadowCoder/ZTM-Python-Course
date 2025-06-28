@@ -7,19 +7,27 @@
 # print(f"That is very cool that you come from {user_location}!")
 
 
-user_name = input(f"Please enter your Username: ")
+# user_name = input(f"Please enter your Username: ")
 
-print(f"Hello {user_name}.")
+# print(f"Hello {user_name}.")
 
-user_pw = input(f"Please enter your password: ")
+# user_pw = input(f"Please enter your password: ")
 
-password = int(123)
+# password = int(123)
 
-if int(user_pw) == password:
-    print(f"Password Accepted!")
-    print(f"Access Authorized")
-    print(f"Welcome back {user_name}!")
+# if int(user_pw) == password:
+#     print(f"Password Accepted!")
+#     print(f"Access Authorized")
+#     print(f"Welcome back {user_name}!")
+# else:
+#     print(f"Password Incorrect!")
+#     print(f"Access Denied")
+
+# hopefully this should work out...
+
+trying_change = input(f"Helloo i am under the water, are you? ")
+
+if trying_change == "yes":
+    print(f"OOOhhh nooo, now we both need halp!")
 else:
-    print(f"Password Incorrect!")
-    print(f"Access Denied")
-
+    print(f"Please save me, i will reward you!!!")
