@@ -31,3 +31,5 @@ if trying_change == "yes":
     print(f"OOOhhh nooo, now we both need halp!")
 else:
     print(f"Please save me, i will reward you!!!")
+
+# Well well well if this isnt the third day i am messing with git XD.
