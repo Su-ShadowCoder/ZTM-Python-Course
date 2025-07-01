@@ -51,4 +51,7 @@
 
 # #rounds of to a integer
 # print(2//4)
-print(11//4)
+# print(11//4)
+
+#modulo, is to represent what the remainder is of a division
+# print(5%4)
