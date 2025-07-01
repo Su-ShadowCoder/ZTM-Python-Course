@@ -25,11 +25,30 @@
 
 # hopefully this should work out...
 
-trying_change = input(f"Helloo i am under the water, are you? ")
+# trying_change = input(f"Helloo i am under the water, are you? ")
 
-if trying_change == "yes":
-    print(f"OOOhhh nooo, now we both need halp!")
-else:
-    print(f"Please save me, i will reward you!!!")
+# if trying_change == "yes":
+#     print(f"OOOhhh nooo, now we both need halp!")
+# else:
+#     print(f"Please save me, i will reward you!!!")
 
 # Well well well if this isnt the third day i am messing with git XD.
+
+
+# Fundamental Data Types
+# int and float
+
+# print(type(2+4))
+# print(type(2-4))
+# print(type(2*4))
+# print(type(2/4))
+
+#Still a Float
+# print(type(9.9+1.1))
+
+# #exponential
+# print(2**3)
+
+# #rounds of to a integer
+# print(2//4)
+print(11//4)
