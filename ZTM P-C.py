@@ -54,4 +54,26 @@
 # print(11//4)
 
 #modulo, is to represent what the remainder is of a division
-# print(5%4)
+# print(6%4)
+
+# Math functions
+# print(round(3.1))
+# print(round(3.9))
+
+# print(abs(-20))
+
+# you can google for math functions python 3 if you want to use more functions
+
+#they key is to underestand how to google and use them.
+
+
+#Operator precedence
+
+print(20 + 3 * 4)
+
+# What takes priority(essentially just like math's):
+# ()
+# **
+# */
+# +-
+
