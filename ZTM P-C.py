@@ -69,7 +69,7 @@
 
 #Operator precedence
 
-print(20 + 3 * 4)
+# print(20 + 3 * 4)
 
 # What takes priority(essentially just like math's):
 # ()
@@ -77,3 +77,40 @@ print(20 + 3 * 4)
 # */
 # +-
 
+# Exercise: Operator Precedence
+
+# Guess the output of each answer before you click RUN
+# Try to write down your answer before and see how you do... keep it mind I made it a little tricky for you :)
+
+# print((5 + 4) * 10 / 2)         
+
+# # answer:5 + 4 = 9, 10 / 2 = 5, 9 * 5 = 45
+
+# print(((5 + 4) * 10) / 2)
+
+# # answer: 5 + 4 = 9, 9 * 10 = 90, 90 / 2 = 45 
+
+# print((5 + 4) * (10 / 2))
+
+# # answer:9 * 5 = 45
+
+# print(5 + (4 * 10) / 2)
+
+# # answer:4 * 10 = 40, 40 / 2 = 20, 5 + 20 = 25
+
+# print(5 + 4 * 10 // 2)
+
+# # answer: 4 * 10 = 40, 40 // 2 = 20, 5 + 20 = 25
+
+# i made a mistake in calculating that i didnt take in acount, that when dividing that the numbers become float, and with // it becomes whole so in turns into a integer
+
+# so intsead of 45, i should have answered 45.0
+
+
+# Optional: bin() and complex
+
+# int float
+# complex
+
+print(bin(5))
+print(int('0b101', 2))
