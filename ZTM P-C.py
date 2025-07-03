@@ -112,5 +112,8 @@
 # int float
 # complex
 
-print(bin(5))
-print(int('0b101', 2))
+# bin turns a number into binary
+# print(bin(5))
+
+# turns binary into normal
+# print(int('0b101', 2))
