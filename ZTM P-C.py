@@ -168,4 +168,17 @@
 # ----------------------------------------
 # Lesson: Expressions vs Statements
 
+# iq = 100
+
+# user_age = iq / 5
+
+# what comes after = here abve, is a expression. it is a piece of code that produces a value ->{iq / 5}. this produces a value that would be asign to user_age. it is not the answer that is the expression but exactly what i asign with the arrow that is the expression. the expression is the cause and what come out of it is the consquense in this situation the value assign to the variable: user_age
+
+# A Statement on the other hand is a entire line of code in this 
+# example: user_age = iq / 5
+# that perform a action.
+# so what happens is 100/5 and then assigning that value to the user_age
+
+# ------------------------------------------------------
+# Lesson: Augmented Assignment Operator
 
