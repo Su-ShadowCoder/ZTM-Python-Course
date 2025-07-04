@@ -1,3 +1,4 @@
+# -------------------------------------------------------
 # userinput_name = input(f"Hey, what is your name?")
 
 # print(f"Hello {userinput_name}!")
@@ -34,8 +35,9 @@
 
 # Well well well if this isnt the third day i am messing with git XD.
 
+# -----------------------------------------------
+# Lesson: Fundamental Data Type
 
-# Fundamental Data Types
 # int and float
 
 # print(type(2+4))
@@ -67,7 +69,7 @@
 #they key is to underestand how to google and use them.
 
 
-#Operator precedence
+# Lesson: Operator precedence
 
 # print(20 + 3 * 4)
 
@@ -77,6 +79,7 @@
 # */
 # +-
 
+# -----------------------------------------------
 # Exercise: Operator Precedence
 
 # Guess the output of each answer before you click RUN
@@ -117,3 +120,52 @@
 
 # turns binary into normal
 # print(int('0b101', 2))
+
+# ------------------------------------------
+# Lesson: Variables
+
+# example
+# storing a value by asinging a name to it. storing information in the computer
+
+# iq = 190
+# # the number is bound to the name/id
+
+# print(iq)
+
+# Best practices when programming when using variables:
+# -snake_case
+# -Start with a lowercase or underscore
+# -letters, numbers, underscores
+# -Case sensitive
+# -Don't overwrite keywords - dont use words that the python language uses, for example dont create a variable with the name print or if or input. Don't use Python keywords
+
+
+# be carefull with this:
+# constants
+# PI = 3.14
+# PI = 0
+
+# If you see something in full capital case, then that means that that value to that variable is constant. it does not change unless the dev as seen here overwrites the constant value. but then again it would then stay at that last overwritten value.
+
+# Another thing to be careful of is this:
+# __
+
+# Here above are 2 underscores, when you see these with a variable these are called: dunder variables.
+
+# Dunder variables are meant to be left alone and you should't touch or change them.
+
+# Naming variables is one the most important skill to have so people understand your code. that is the point of writing good code. writing good code is that its readable and understandble by other programmers.
+
+
+# This trick here under is to asign variables quickly and multiple times.
+
+# a,b,c = 1,2,3
+# print(a)
+# print(b)
+# print(c)
+# print(a,b,c)
+
+# ----------------------------------------
+# Lesson: Expressions vs Statements
+
+
