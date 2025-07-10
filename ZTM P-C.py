@@ -182,3 +182,89 @@
 # ------------------------------------------------------
 # Lesson: Augmented Assignment Operator
 
+# some_value = 5
+# some_value = 5 + 2
+# some_value = some_value + 2
+
+# or 
+# Augmented assignment Operator
+# some_value += 2
+# some_value *= 2
+
+# The operator comes to the left of the equel signed.
+
+
+# --------------------------------------------------
+# Lesson: Strings
+
+# str = string, a string is a collectrion of character's within the quotions marks "".
+
+
+# print(type(f"hi hello there!"))
+
+# user_name = "supercoder"
+# pass_word = "supersecret"
+# long_string = """ you can write this as it is
+# and you dont have to worry about line and can write multiline strings"""
+
+# first_name = "suda"
+# last_name = "kanda."
+# full_name = first_name + " " + last_name
+# print(f"{full_name}")
+
+# ----------------------------------------------------
+# Lesson: string Concatenation
+# it means adding strings togheter
+
+# print(f"hello" + " " + "suda")
+
+# string Concatenation only works with Strings
+# print(f"hello" + 5) ---> Error message.
+
+
+#  -------------------------------------------------------
+# Lesson: Type Conversion:
+
+# print(type(str(100))) 
+
+# we have converted 100 into a string 
+
+# print(type(int(str(100))))
+
+# here in a very roundabout manner we have converted an int, into an str into 
+# an int finaly. that is because of the brackets order like russian nestling 
+# doll. 
+
+# a = str(100)
+# b = int(a)
+# c = type(b)
+
+# print(c)
+
+# This is the idea of type conversion, we are converting datatype's from one
+# data type to another datatype.
+
+# ------------------------------------------------------------------------
+# Lesson: Escape Sequences
+
+# problem with quotation marks, so you tell python what ever comes after a
+# backslash is a string 
+
+# weather = "It\'s \"kind of\" sunny"
+# print(weather)
+
+
+
+
+
+# adding a tab spacing
+
+# weather = "\t It\'s \"kind of\" sunny"
+# print(weather)
+
+
+
+# another one is using \n or a new line 
+weather = "\t It\'s \"kind of\" sunny, \n hope you have a good day!"
+
+print(weather)
