@@ -253,18 +253,23 @@
 # weather = "It\'s \"kind of\" sunny"
 # print(weather)
 
-
-
-
+# ----
 
 # adding a tab spacing
 
 # weather = "\t It\'s \"kind of\" sunny"
 # print(weather)
 
+# ----
+
+# another one is using \n for a new line 
+
+# weather = "\t It\'s \"kind of\" sunny, \n hope you have a good day!"
+# print(weather)
 
 
-# another one is using \n or a new line 
-weather = "\t It\'s \"kind of\" sunny, \n hope you have a good day!"
 
-print(weather)
+
+# ----------------------------------------------------------------
+# Lesson: Formatted Strings
+
