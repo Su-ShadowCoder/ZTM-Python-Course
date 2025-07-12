@@ -273,3 +273,22 @@
 # ----------------------------------------------------------------
 # Lesson: Formatted Strings
 
+# name = "Johnny"
+# age = 55
+# print(f"Hi {name}. You are {age} years old")
+# # here above is the new method of adding variables to a string, which is the best method in my opinion.
+
+
+# print("Hi {}. You are {} years old".format("Johnny","55"))
+# # This is how it used to be before 3.0 python.
+
+
+
+# print("Hi {1}. You are {0} years old".format(name,age))
+# #Here above is the method of formatting with a certain order. as computer language you start counting from zero. you could just put the variables in the brackets behind the format, and that according to the place the variables, that would be the number assigned to it. as you could see from the example above where because the number is put reverse you could see that age came first and name came second. of course this is wrong but, this just proves how this method works in order, which is right. 
+
+
+
+# print("Hi {new_name}. You are {age} years old.".format(new_name="sally", age="100"))
+# # With this method you can also make variables in the format statement like here above. 
+
