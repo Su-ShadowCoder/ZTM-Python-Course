@@ -312,8 +312,15 @@
 # [start:stop:stepover]
 
 
-user_answer = "I like icecream, and I want it now."
+# user_answer = "I like icecream, and I want it now."
 
-print(user_answer[3:15])
+# print(user_answer[3:15])
 # answer before run: "ike icecream, "
 
+# so i am wrong, the stop starts counting from 0 to 15 and not the start
+# from what is required in the statement here above.
+
+
+
+# ----------------------------------------------------------------
+# Lesson:
