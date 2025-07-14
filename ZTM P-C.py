@@ -292,3 +292,28 @@
 # print("Hi {new_name}. You are {age} years old.".format(new_name="sally", age="100"))
 # # With this method you can also make variables in the format statement like here above. 
 
+
+# ----------------------------------------------------------------
+# Lesson: String indexes
+
+
+# "me me me"
+# _01234567_
+
+# -----------
+
+
+# self_ish =  "me me me"
+#         #   _01234567_
+
+# print(self_ish[0])
+# print(self_ish[7])
+
+# [start:stop:stepover]
+
+
+user_answer = "I like icecream, and I want it now."
+
+print(user_answer[3:15])
+# answer before run: "ike icecream, "
+
