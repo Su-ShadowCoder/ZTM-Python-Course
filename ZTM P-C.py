@@ -320,7 +320,106 @@
 # so i am wrong, the stop starts counting from 0 to 15 and not the start
 # from what is required in the statement here above.
 
+# This is called Slicing
+
+# ----------------------------------------------------------------
+# Lesson: Immutabilty
+
+selfish = "01234567"
+        # _01234567_
+
+# selfish = 100
+
+# # immutability means that strings in python cannot be changed.
+
+# print(selfish)
+
+
+# but 
+
+# selfish[0] = "8"
+
+# print(selfish)
+
+# you get a error, while slicing, so you have to completely re asign the value
+
+# so this would work -  here under 
+
+# selfish = "8"
+# print(selfish)
+
+# you cant re asign part of a string, once created it exist like that in 
+# that form. The only way to create is to change into something new and not while slicing. 
+
+# ----------------------------------------------------------------
+# Lesson: Built-In Functions + Methods
+
+# greet = "hellloooo"
+# print(greet[0:len(greet)])
+
+# and this ladies and gentleman, is a built-in funtion
+# print(len(greet))
+
+# then you also have methods which you would be able to refrences when need it,
+# through the we3 website or somewhere elso, just google it. 
+
+# .format() is a method 
+
+# why do we care? with th is, python gives us automatic tools that we
+# can use on strings.
+
+# quote = "to be or not to be"
+# print(quote.upper())
+
+# everthing cam in upper cappital
+
+# quote = "to be or not to be"
+# print(quote.capitalize())
+
+# with this it capitalize the first letter from the left.
+
+
+# quote = "to be or not to be"
+# print(quote.())
+
+# when you press dot then you can scroll trough the methods 
+# it gives you to use.
+
+
+# quote = "to be or not to be"
+# print(quote.find("be"))
+
+# we have find, which will find  the thing in the first occurence.
+# it gives 3, what it means is that there is a be 
+# and it starts at index b which is 
+# from 0, 1, 2, 3. it starts on the index 3.abs
+
+
+# quote = "to be or not to be"
+
+# print(quote.replace("be","me"))
+# print(quote)
+
+# when you print this you get this: 
+# to me or not to me
+# to be or not to be
+
+# the reason being is that strings are immutable, so unless you change it
+# (overwrite them),
+# or completly delete it. it will always gives you the original string that was
+# assigned to the variable.
+
+# quote_2 = quote.replace("be","me")
+# print(quote_2)
+
+# in here above we are creating a whole new string, but we never modify
+# th string because it's immutable.
+
 
 
 # ----------------------------------------------------------------
-# Lesson:
+# Lesson: Booleans
+
+
+
+
