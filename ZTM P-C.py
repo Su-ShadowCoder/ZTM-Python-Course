@@ -420,6 +420,15 @@ selfish = "01234567"
 # ----------------------------------------------------------------
 # Lesson: Booleans
 
+# booleans in python is bool. 
 
+# name = "abdullah"
+# is_cool = False
+# is_cool = True
 
+# print(is_cool)
 
+# print(bool(0))
+
+# ----------------------------------------------------------------
+# Lesson:
