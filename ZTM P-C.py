@@ -431,4 +431,31 @@ selfish = "01234567"
 # print(bool(0))
 
 # ----------------------------------------------------------------
-# Lesson:
+# Lesson: Exercise: Type conversion
+
+# coding an age guessing program by entering the birth year. 
+
+# import datetime
+
+# user_birthyear = int(input(f"Hello, I can guess your age by knowing your "
+# "birth year,\nPlease enter your birth year to know your age:\n"))
+
+
+# current_dt = datetime.datetime.now()
+# current_year = current_dt.year
+
+# # print(current_year) we have tested that it worked. very nice
+
+# age = current_year - user_birthyear
+
+# if age == 1:
+#         print(f"You are {age} year old!")
+# else:
+#         print(f"You are {age} years old!")
+
+
+# ----------------------------------------------------------------
+# Lesson: DEVELOPER FUNDAMENTALS: II
+
+
+
