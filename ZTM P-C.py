@@ -458,4 +458,77 @@ selfish = "01234567"
 # Lesson: DEVELOPER FUNDAMENTALS: II
 
 
+# ---------------------------------------------------------------
+# Lesson:  Exercise: Password Checker
+
+
+# user_name = input(f"Please enter your username:\n")
+# user_passwrd = input(f"Please enter your password:\n")
+
+# star_secret = "*"
+# passwrd_length = len(user_passwrd)
+# keep_secret = passwrd_length * star_secret
+
+
+# print(f"Hello {user_name}, your password: \"{keep_secret}\", is {passwrd_length} letters long!")
+
+
+# ---------------------------------------------------------------
+# Lesson: Lists
+
+# a list is a ordered sequence of objects , that can be of any type.
+
+# lst = [1,2,3,4,5]
+# lst2 = ['a','b','c']
+# lst3 = [1,2,'s',False]
+
+# list is a collection of items, or "Arrays" if you will.
+# data structure is a container around you data. that contains for example the list in the objects ina contained fashion. those brackets acts like data structure. 
+
+# amazon_cart = ['notebooks','sunglasses']
+# print(amazon_cart[1])
+
+
+
+# ---------------------------------------------------------------
+# Lesson: List Slicing
+
+# with string slicing we were able to slice a variable that contained strings, we were using this format to slice: [start:stop:stepover]. with this were able to start and stop and stepover at the desired index(Caracter) we wanted.
+
+# so list slicing is also a thing.
+
+
+
+# amazon_cart = [
+#         'notebooks',
+#         'sunglasses',
+#         'toys',
+#         'grapes',
+# ]
+
+# print(amazon_cart)
+
+# strings are immutable
+# but lists ARE mutable. 
+
+# amazon_cart[0] = 'laptop'
+# print(amazon_cart[1:3])
+# print(amazon_cart)
+
+# when you slice a list, you are creating a new list, a copy of the existing list and then modified according to how you have sliced the list. 
+
+
+# new_cart_list =  amazon_cart[1:3]
+# new_cart_list[0] = 'gum' 
+# print(new_cart_list)
+# print(amazon_cart)
+
+# you can see when  you run this code that is has become a different list in accordance with what you have sliced. 
+# you can even change te object in the list again and make a new list out of the new list!
+
+# evertime you do list slicing you make a copy of the existing list. 
+
+
+# ---------------------------------------------------------------
+# Lesson:
 
