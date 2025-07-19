@@ -325,8 +325,8 @@
 # ----------------------------------------------------------------
 # Lesson: Immutabilty
 
-selfish = "01234567"
-        # _01234567_
+# selfish = "01234567"
+#         # _01234567_
 
 # selfish = 100
 
@@ -530,5 +530,91 @@ selfish = "01234567"
 
 
 # ---------------------------------------------------------------
-# Lesson:
+# Lesson: Matrix
+
+# a matrix is a way to describe a 2D lists, or multi dimensional lists. it is reconizable by looking the array that is within the array were the numbers are. 
+
+# matrix = [
+#         [1,2,3],
+#         [4,5,6],
+#         [7,8,9]
+# ]
+
+# it is used in machine learning, photo procesing, etc. 
+
+
+# print(matrix[0][1])
+
+# accesing information on an array or lists in python we use the term list.
+
+
+# ---------------------------------------------------------------
+# Lesson:  List Methods - Part 1.
+
+
+# basket = [1,2,3,4,5]
+
+
+# adding 
+
+
+# new_list = basket.append(100)
+# print(basket)
+# print(new_list)
+
+# when you append in does it in place, which means it doesnt do anything else, so you have to first append and then make it a new list. this is unlike list slicing where you get a new copy of the list. which does not happen here. 
+
+# basket.append(100)
+# new_list = basket
+# print(new_list)
+# ----------------------------
+
+
+# basket.insert(4, 100)
+# new_list = basket
+# print(new_list)
+
+#same insert modify's the list in place, that it doesnt realy output a new list, it just modifys whatever is existing in memory.
+
+
+# new_list = basket.extend([100, 101])
+# new_list = basket
+# print(new_list)
+# ---------------------------------
+
+
+
+# basket = [1,2,3,4,5]
+# #adding
+# basket.extend([100])
+
+# print(new_list)
+
+# removing
+# new_list = basket.pop(4)
+# with pop we want to specify the index, we want to remove, en if you print it like here above , it returns whatever you have just specified to remove.  
+
+# new_list = basket.remove(4)
+#and with remove method we want to specify the value we want to remove. 
+# print(new_list)
+
+# and remove is still a method that works in place. which means it just removes whatever is existing in a memory, without making new list
+
+#some methods returns none, when you modify a list, which means that it's only going to change or extend a list that it was given, so it wont give you a new list of what you have changed. you still would need to specify a new variable for the changed variable by assigning a new variable to the variable AFTER you have changed is like this for example
+# basket. remove(4)
+# new_list = basket
+# THEN YOU HAVE A NEW MODIFIED LIST. 
+# print(new_list)
+
+
+# new_list = basket.clear()
+# print(basket)
+
+# clear removes whatever is in the list of basket. 
+
+
+
+
+# ---------------------------------------------------------------
+# Lesson:  List Methods - Part 2. 
 
