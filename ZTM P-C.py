@@ -695,6 +695,121 @@
 
 
 # ---------------------------------------------------------------
-# Lesson:
+# Lesson: Common List Patterns
+
+# basket = ['x','a','b','c','d','e','d']
+# basket.sort()
+# basket.reverse()
+
+
+
+# print(len(basket))
+# print(basket[::-1])
+
+# print(list(range(101)))
+
+
+
+# new_sentence = " ".join(["hi", 'my', 'name', 'is', 'JOJO'])
+
+# print(new_sentence)
+
+
+
+# ---------------------------------------------------------------
+# Lesson: List unpacking
+
+# a,b,c, *other, d = [1,2,3,4,5,6,7,8,9]
+
+# print(a)
+# print(b)
+# print(c)
+# print(other)
+# print(d)
+
+# so list unpacking is essentialy exploding the list into variables and assiginng the exploded element to its var, while the * function  makes sure that the rest that is not exploding still is in the list or is protected from exploding/list unpacking. 
+
+
+# ---------------------------------------------------------------
+# Lesson: None
+
+# None stand for absence of value. 
+
+# ---------------------------------------------------------------
+# Lesson: Dictionaries
+
+# Dictionary
+
+# dictionary = {
+#     'a' : 1,
+#     'b' : 2,
+#     'x' : 3
+# }
+
+
+# print(dictionary)
+
+# here b is the key and 2 is the value.
+# a dictonary is a unordered key value pair
+# it means that the pair are not next to each other in memory.  with list we could access it in an orderly manner by using the index of 0 and then index of 1.abs
+
+# a dictionary on the other hand are al over the place
+
+# ---------------------------------------------------------------
+# Lesson: DEVELOPER FUNDAMENTALS: III
+
+
+# a dictionary hold more information than a list.
+# while a list have only a variable and a index asigned to it.
+
+# ---------------------------------------------------------------
+# Lesson: Dictionary Keys
+
+# dictonary = { 
+#     123: [1,2,3],
+#     True: 'hello',
+    
+# }
+
+# print(dictonary[True])
+
+# dictionary key's are immutable,  which means a value that can be changed. because of that anything that has been assigned to the key of a dictionary will be an immutable datatype which means that you cannot assign a list to a key. while the value can have a mutable datatype.
+# A key in a dictionary has to be unique, there can only be one key. anytime you make a key with the same name it overides the precvious one.
+
+
+# ---------------------------------------------------------------
+#  Re doing, Lesson:Dictionary
+
+
+# Dictionary
+
+# dict 
+
+dictionary = {
+    'a': [1,2,3],
+    'b': 'hello',
+    'x': True  
+}
+
+my_list = [
+    {
+    'a': [1,2,3],
+    'b': 'hello',
+    'x': True  
+},
+{
+    'a': [4,5,6],
+    'b': 'hello',
+    'x': True  
+}
+
+]
+
+print(my_list[0]['a'][2])
+print(dictionary['a'][1])
+
+
+# a dictionary is a unordered key-value pair.
+# which means that they are not right next to each other on the memory. every pair will be in random in memmory. 
 
 
