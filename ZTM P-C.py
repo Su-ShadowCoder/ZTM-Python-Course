@@ -785,31 +785,59 @@
 
 # dict 
 
-dictionary = {
-    'a': [1,2,3],
-    'b': 'hello',
-    'x': True  
-}
+# dictionary = {
+#     'a': [1,2,3],
+#     'b': 'hello',
+#     'x': True  
+# }
 
-my_list = [
-    {
-    'a': [1,2,3],
-    'b': 'hello',
-    'x': True  
-},
-{
-    'a': [4,5,6],
-    'b': 'hello',
-    'x': True  
-}
+# my_list = [
+#     {
+#     'a': [1,2,3],
+#     'b': 'hello',
+#     'x': True  
+# },
+# {
+#     'a': [4,5,6],
+#     'b': 'hello',
+#     'x': True  
+# }
 
-]
+# ]
 
-print(my_list[0]['a'][2])
-print(dictionary['a'][1])
+# print(my_list[0]['a'][2])
+# print(dictionary['a'][1])
 
 
 # a dictionary is a unordered key-value pair.
 # which means that they are not right next to each other on the memory. every pair will be in random in memmory. 
 
+
+# dictionary key's needs to have special property,
+# a key is a value that cannot changed. so if you asigned a list to a key, it wont work because lists are mutable but in a dictioanary key you cant have a mutabable.
+
+#  so you can only have a immutable dictionary key.
+
+#  a key in a dictionary has to be unique, there can only be one key,, because that key represent a book shelve in that memory space.
+
+# if you still use two same key names, then its going to overide the previous one with the last one.
+
+# ---------------------------------------------------------------
+#  Re doing, Lesson: Dictionary Methods
+
+
+#Dictionary
+
+# user = {
+#     'basket': [1,2,3],
+#     'greet': 'hello',
+#     'age': 20
+# }
+
+# user2 = dict(name='JohnJohn')
+# print(user2)
+
+
+# ---------------------------------------------------------------
+#  Lesson: Dictionary Methods 2
 
