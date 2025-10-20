@@ -854,3 +854,36 @@
 # ---------------------------------------------------------------
 #  Lesson: Tuples
 
+# Tuple
+
+my_tuple = (1,2,3,4,5)
+
+# Tuples are immutable, once created, it is the way it is.
+# you cant sort it, or reverse it like a list.
+
+# print(5 in my_tuple)
+
+# Tuples are good, if you dont want to change the existing list. other programmers would't be able to make mistakes either(atleast if they dont like force it.)
+
+# unlike a list you want to stay tuples the way it is, it makes thing easier and more efficient. 
+
+# It makes code more predictable, however it is less flexible than a list. and because they are less flexible the other good thing about them is that they are slightly more performative than list. which means that they are faster.
+
+# a good example for using a tuple instead of a list is, that if you work at uber. their geographic location and coordination doeesnt often changes. so you use a tuple. 
+
+# while your car may move so we have to use list as the coordination of you car keeps changing. 
+
+# in dictionaries you can use tuple's as a value for key for dictionaries. for example:
+
+# user = {
+#     (1,2): [1,2,3]
+# }
+
+# the key here as you can see is in tuples, as keys are immutable and tuples too. 
+
+# print(user[(1,2)])
+
+
+# ---------------------------------------------------------------
+#  Lesson: Tuples 2
+
