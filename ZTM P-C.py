@@ -887,3 +887,15 @@ my_tuple = (1,2,3,4,5)
 # ---------------------------------------------------------------
 #  Lesson: Tuples 2
 
+# # Tuple
+# x,y,z, *other = (1,2,3,4,5)
+
+
+# print(other)
+
+# a tuple has 2 methods that we care about, mostly the ones that we use are count() and index(). count returns the number of times a specified value occurs in a tuple. and index Searches the tuple for a specified value and returns the position of where it was found. 
+
+my_tuple = (1,2,3,4,5,5,5,5)
+
+print(len(my_tuple))
+
