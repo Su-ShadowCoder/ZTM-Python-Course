@@ -856,7 +856,7 @@
 
 # Tuple
 
-my_tuple = (1,2,3,4,5)
+# my_tuple = (1,2,3,4,5)
 
 # Tuples are immutable, once created, it is the way it is.
 # you cant sort it, or reverse it like a list.
@@ -895,10 +895,44 @@ my_tuple = (1,2,3,4,5)
 
 # a tuple has 2 methods that we care about, mostly the ones that we use are count() and index(). count returns the number of times a specified value occurs in a tuple. and index Searches the tuple for a specified value and returns the position of where it was found. 
 
-my_tuple = (1,2,3,4,5,5,5,5)
+# my_tuple = (1,2,3,4,5,5,5,5)
 
-print(len(my_tuple))
+# print(len(my_tuple))
 
 # ---------------------------------------------------------------
-#  Lesson:
+#  Lesson: set
 
+# sets are unordered collection of unique objects, 
+# are over the place in memory
+
+
+# my_set = {1,2,3,4,5,5}
+# my_set.add(100)
+# my_set.add(2)
+
+# print(my_set)
+
+#  in a sets there are no duplicates.
+
+# my_list = [1,2,3,4,5,5]
+
+# my_set = set(my_list)
+
+# print(my_set)
+
+# Converting, This would be usefull when using emails, like when collecting emails for a page, you dont want to collect duplicate emails, as you already have the same email in the system. which would be not efficent and unnaccary usage of resources. 
+
+# my_set = {1,2,3,4,5,5}
+# print(my_set[0]) doesnt work
+
+# print( 1 in my_set)
+# print(len(my_set))
+
+# new_set = my_set.copy()
+
+# my_set.clear()
+# print(new_set)
+
+
+# ---------------------------------------------------------------
+#  Lesson: set 2
