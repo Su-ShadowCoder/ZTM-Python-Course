@@ -953,6 +953,21 @@
 
 
 # ---------------------------------------------------------------
-#  Lesson: 
+#  Lesson: Conditional Logic
 
+
+# is_old = False
+# is_licenced = False
+
+# if is_old and is_licenced:
+#     print(f"You are old enough to drive, and you have a licence!")
+# elif condition:
+# elif condition:
+# else:
+#     print(f"You are not of age!")
+
+# print("okoko")
+
+# ---------------------------------------------------------------
+#  Lesson:Indentation In Python
 
