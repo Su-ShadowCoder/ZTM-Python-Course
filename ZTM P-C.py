@@ -971,3 +971,14 @@
 # ---------------------------------------------------------------
 #  Lesson:Indentation In Python
 
+# The indentation within the python editor makes it such that conditions are put much more logical to use. 
+
+# so with indentation you have to be aware that there is a hiarchy with the spaces. if the is no space, en next line has space then you know that the first line is the parent of the second line. 
+
+# At the same time the child belongs to that specific parent and if the parent doesnt get excecuted the child would not be executed either :o. which make that a code of block on it's own.
+
+# ---------------------------------------------------------------
+#  Lesson: Truthy vs Falsey
+
+
+
