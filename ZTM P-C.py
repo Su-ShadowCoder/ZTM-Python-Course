@@ -980,25 +980,25 @@
 # ---------------------------------------------------------------
 #  Lesson: Truthy vs Falsey
 
-is_old = bool('hello')
-is_licenced = bool(5)
+# is_old = bool('hello')
+# is_licenced = bool(5)
 
-print(bool('hello'))
-print(bool(5))
+# print(bool('hello'))
+# print(bool(5))
 # Both of them here above code print True; this is what we call a Truthy value in python. As this value what we have given above comes out as True. 
 
-print(bool(''))
-print(bool(0))
-print(bool(None))
+# print(bool(''))
+# print(bool(0))
+# print(bool(None))
 #Both of the here above code print False; It's not actualy false, but it is Falsey because if we run the boolean code on it to phython; mostly there is no value to it so it shows False. 
 
-user_name = "Maximilion"
-pass_word = "123"
+# user_name = "Maximilion"
+# pass_word = "123"
 
-if pass_word and user_name:
-    print(f"Welcome back user!")
-else:
-    print(f"please Enter your username and password")
+# if pass_word and user_name:
+#     print(f"Welcome back user!")
+# else:
+#     print(f"please Enter your username and password")
 
 # In this situation the values are both truthy so when the conditional code check if the value is true, it comes out as truthy for both of them so the condition of if would be excuted which is to print welcome back user. 
 
@@ -1006,4 +1006,17 @@ else:
 #  Lesson: Ternary Operator
 
 
+# Ternary Operator's are called conditional expression's.
+# an expression evaluate to evalue. conditional expression is operation that evaluete's to something based on the condition being True of False. 
+
+# condition_if_true if condition else condition_if_false
+
+# Facebook coding situation 
+is_friend = True
+can_message = "message allowed" if is_friend else "not allowed to message"
+
+print(can_message) 
+
+# ---------------------------------------------------------------
+#  Lesson: Short Circuiting
 
