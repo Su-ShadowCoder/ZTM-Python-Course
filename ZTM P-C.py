@@ -1012,11 +1012,27 @@
 # condition_if_true if condition else condition_if_false
 
 # Facebook coding situation 
-is_friend = True
-can_message = "message allowed" if is_friend else "not allowed to message"
+# is_friend = True
+# can_message = "message allowed" if is_friend else "not allowed to message"
 
-print(can_message) 
+# print(can_message) 
 
 # ---------------------------------------------------------------
 #  Lesson: Short Circuiting
+
+# is_friend = True
+# is_user = True
+
+# if is_friend or is_user:
+#     print("best friends forever")
+
+# short circuiting is when the interpeter executes the code until i thinks it did enough. for example here above. whe the if condition for the is friend became true, because of the or, condition that if either one of the is true that you can print best friends forever. so basicaly python stops at the first excustion if possible rather than going trouthg the whole code if allowed like here. if it was and. then pytthon would have to check if both conditions are True, which goes trout both condition first to check if both of them needed to get printed.. 
+
+# if you need to check both statements you will have to use and.
+
+# this is about efficieny, and by using this method whenever possible you make the code efficent.
+
+
+# ---------------------------------------------------------------
+#  Lesson: 
 
