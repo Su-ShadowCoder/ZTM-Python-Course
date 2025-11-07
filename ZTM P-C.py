@@ -1036,15 +1036,49 @@
 # ---------------------------------------------------------------
 #  Lesson: Logical Operators
 
-# and , or , ">", "<", =, are logical operators. Almost like math's.
+# and , or , not are logical operators. Almost like math's.
 
 # well that was easy, we just had a lesson and the next lesson is the excercise about it 
+
+# print(5>3)
+# print(10<30)
+# print(4>3)
+# print(7<1)
+# print(90>120)
 
 # ---------------------------------------------------------------
 #  Exercise: Logical Operators
 
+# is_athlete = True
+# is_expert = False
+
+# # check if atlete and professional: "You are a professional athlete!" 
+
+# #check if athlete but not professional:
+# # "at least you're getting there..."
+
+# #if you're not a athlete: "you need to train!"
 
 
+# if is_athlete and is_expert:
+#     print(f"You are a professional athlete!")
 
+# # down here is how i did it, and down there is how it supposed to be. 
+# # elif is_athlete and is_expert == False:
+# #     print(f"at least you're getting there...")
+
+# elif is_athlete and not is_expert:
+#     print("at least you're getting there")
+
+# # my way under
+# # else:
+# #     print(f"you need to train!")
+ 
+# elif not is_athlete:
+#     print(f"you need to train!")
+
+
+# ---------------------------------------------------------------
+#  Lesson: is vs ==
 
 
