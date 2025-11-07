@@ -1034,5 +1034,17 @@
 
 
 # ---------------------------------------------------------------
-#  Lesson: 
+#  Lesson: Logical Operators
+
+# and , or , ">", "<", =, are logical operators. Almost like math's.
+
+# well that was easy, we just had a lesson and the next lesson is the excercise about it 
+
+# ---------------------------------------------------------------
+#  Exercise: Logical Operators
+
+
+
+
+
 
