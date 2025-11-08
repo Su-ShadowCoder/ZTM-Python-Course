@@ -1081,4 +1081,27 @@
 # ---------------------------------------------------------------
 #  Lesson: is vs ==
 
+# # None is a special object that represent "no value" in a code
+# print(None == None)
+
+# # Zero is a nummerical value that represent the number 0.
+# print(None != 0)
+
+# print([] == None)
+# # As a empty list(array) it has nothing in it, but it still represent a list or an Array as an existing object. 
+
+# print([] == 0)
+# # An empty array is object with nothing in it, and represents falsy, while a zero is a numerical value with the value of zero. which mean that they are not equal to each other
+
+# # All of these above; The list(Array), 0(zero) and None are represented Falsey. but are not the same in value. as they a mean different things.
+
+#  == checks for equality, "is" actualy checks the value in the same memmory
+# while a list, a data structure is created everytime in a new location, will be memorized in different locations and does not come True with "is". 
+# so "is" operator checks for the exact thing that you are looking for. and if there is it will come out as True. 
+# while "==" operator checks the value. 
+
+# ---------------------------------------------------------------
+#  Lesson: For Loops
+
+
 
