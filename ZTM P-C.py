@@ -1103,5 +1103,57 @@
 # ---------------------------------------------------------------
 #  Lesson: For Loops
 
+#  for are for-loops called
 
+# for item in 'Zero to Mastery':
+
+#  so basically its says here for every item in zero to mastery do something
+# The 'zero to mastery' in the for loop above is what is called a itterable,
+# an itterable is something that is able to get looped over. 
+
+# for item in 'Zero to Mastery':
+#     print(item)
+
+
+# for something in object:(do the following here under)
+            # print(something)
+
+# Terminal:
+# Terminal will then print something that is in the object in this situation a string or an array(list,tuples,sets). so for every value that is within the object python will execute the command that you have given to do, under it's for loop line after ":". 
+# make note, for EVERY element in the object, do this action. 
+# when reading for loop. 
+
+# for element in [1,2,3,4,5]:
+#     print(element)
+#     print(element)
+#     print(element)
+# print(f"hi")
+
+
+# for element in [1,2,3,4,5]:
+#     print(element)
+#     print(element)
+#     print(element)
+# print(element)
+
+# notice that the terminal is giving the output of 5. That is because the for loops ends with 5 so it outputs a 5. 
+
+
+# here you see that you can nest for loops. 
+
+# for element in [1,2,3,4,5]:
+#     for x in ['a', 'b', 'c']:
+#         print(element, x)
+
+# # my guess what the output would be: 
+# 1a1b1c
+# 2a2b2c
+# 3a3b3c
+# 4a4b4c
+# 5a5b5c
+
+# i was wrong, but i understand my mistake. that is that it prints every element in the nested loop, which means that it doesnt print everthing of the object at the same time, because the nested loop is STILL a loop. so i have to go overthat action for every element that the nested loop has. 
+
+# ---------------------------------------------------------------
+#  Lesson:
 
