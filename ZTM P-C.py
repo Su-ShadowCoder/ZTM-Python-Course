@@ -1155,5 +1155,64 @@
 # i was wrong, but i understand my mistake. that is that it prints every element in the nested loop, which means that it doesnt print everthing of the object at the same time, because the nested loop is STILL a loop. so i have to go overthat action for every element that the nested loop has. 
 
 # ---------------------------------------------------------------
-#  Lesson:
+#  Lesson: Iterables
 
+# Iterable simply means it is an object or a collection that can be iterated over. basicly something you can keep repeating on until you cant according to the code. 
+
+# iterable - list, dictionary, tuple, set, string. 
+
+# iterated -> is the action of: one by one check each item in the collection. 
+
+# user = {
+#     'name' : 'Golem',
+#     'age': 5006,
+#     'can_swim': False
+# }
+
+# for item in user:
+#     print(item)
+
+# Dictionaries have three methods that are very useful when looping over their keys and values. 
+
+# user = {
+#     'name' : 'Golem',
+#     'age': 5006,
+#     'can_swim': False
+# }
+
+# for item in user.items():
+#     print(item)
+
+#  .items()    # The first method is .items(). with this method you get the key   and the value when iterating over a dictionary. 
+
+#  .values()   # then you have the .values(), here the values gets iterated
+
+#  .keys()     # finally the .keys(). for keys. This is more descryptive.  
+
+
+# here above the ouput returns in tuple,
+# and here under is to return the ouput in seperate columns
+# tuplle unpacking.
+
+
+# user = {
+#     'name' : 'Golem',
+#     'age': 5006,
+#     'can_swim': False
+# }
+
+# for item in user.items():
+#     key, value = item
+#     print(key, value)
+
+# for cleaner and faster method
+
+# for key, value in user.items():
+#     print(key, value)
+
+#  you might even see this: for k, v in user.items():
+
+# an integer value is not a object or collection of item that can be iterated over. 
+
+# ---------------------------------------------------------------
+#  Lesson: Exercise: Tricky Counter
