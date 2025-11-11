@@ -1216,3 +1216,27 @@
 
 # ---------------------------------------------------------------
 #  Lesson: Exercise: Tricky Counter
+
+# Counter
+
+# my_list = [1,2,3,4,5,6,7,8,9,10]
+
+# summed_result = 0
+
+# for element in my_list:
+#     summed_result += element
+
+# print(summed_result)
+
+# could have done here like here under. 
+# my_list = [1,2,3,4,5,6,7,8,9,10]
+
+# summed_result = 0
+
+# for element in my_list:
+#     summed_result = summed_result + element
+
+# print(summed_result)
+
+# ---------------------------------------------------------------
+#  Lesson:
