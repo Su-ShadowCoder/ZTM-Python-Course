@@ -1239,4 +1239,36 @@
 # print(summed_result)
 
 # ---------------------------------------------------------------
+#  Lesson: range()
+
+# range() is a special type of object that used in for loops, you can iterate of that range. 
+ 
+# for number in range(0, 100):
+#     print(number)
+
+# when specifiying range you can have a 3 parameter, that stands for stepover. 
+# depending on the value of the parameter you can change the order of the range you have specified and also to step over a value, which is to skip one value in range of order. 
+
+# for _ in range(0, 10 , 2):
+#     print(_)
+
+# puting  the last value in negative would reverse the range in which it riterates but have to but the max value first in range. 
+
+# This wont work.
+# for _ in range(0, 10 , -1):
+#     print(_)
+
+# correct. for reversing
+# for _ in range(10, 0, -1):
+#     print(_)
+
+
+# you loop also the printing of the list, in this example below the output would be: 2 times list from 0 to 9. 
+# for _ in range(2):
+#     print(list(range(10)))
+
+# quick way to create a list that has integers
+
+# ---------------------------------------------------------------
 #  Lesson:
+
