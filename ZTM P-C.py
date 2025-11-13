@@ -1241,7 +1241,7 @@
 # ---------------------------------------------------------------
 #  Lesson: range()
 
-# range() is a special type of object that used in for loops, you can iterate of that range. 
+# range() is a special type of object/function that used in for loops, you can iterate of that range. 
  
 # for number in range(0, 100):
 #     print(number)
@@ -1270,5 +1270,28 @@
 # quick way to create a list that has integers
 
 # ---------------------------------------------------------------
-#  Lesson:
+#  Lesson: enumerate()
+
+# enumarete = To count off or name one by one; list. 
+# in python enumerate takes a collection and returns it as an enerated object. it also ads as counter as the key of the enumerate object. 
+
+# ultimatelly enumerate is usefull if you need the index counter of the item that youre looping through. 
+
+# for i, element in enumerate('hello'):
+#     print(i, element)
+
+
+# Excercise 
+
+# for i, element in enumerate(list(range(100))):
+#     if i == 50:
+#         print(f"The index of 50 is: {i}!")
+# youre asking for the index of 50, not that index is 50. and not the element of the range object. 
+
+# This is a nice way to check if there is something in a list youre searching for 
+# for i, element in enumerate(list(range(100))):
+#         print(i == 50, element)
+
+# ---------------------------------------------------------------
+#  Lesson: While Loops
 
