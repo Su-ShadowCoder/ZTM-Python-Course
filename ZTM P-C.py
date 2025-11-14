@@ -1295,3 +1295,44 @@
 # ---------------------------------------------------------------
 #  Lesson: While Loops
 
+
+# There is another way to loop besides for loop.
+# while a condition is happening do something.
+
+i = 0
+
+# while i < 50:
+#     print(i)
+    
+# This will keep printing the zero output as the "i" stays fifty in accordance with the code. unless the machine turns of it will keep printing and executing its code. that is why a while loop can be dangerous. you can solve this with the 'break' python keyword. it simply breaks the while loop when you code that into the code. as in example. 
+
+# while i < 50:
+#     print(i)
+#     break
+
+# breaking out of the while loops can also be done by turning a condition into false. Notice that it stop right before 50, because the loops goes on while 0 is smaller than 50. so it prints zero until 49. 
+
+# while i < 50:
+#     print(i)
+#     i += 1
+
+# else, the else statement in a while loop either gets executed if the condition is false for the while loop or when the condition becomes false after the true condition became false because of the execution of the code. 
+
+# while i < 50:
+#     print(i)
+#     i += 1
+# else:
+#     print('done with all the work.')
+
+# The reason for using else instead of just writing it in a new line is because when you use the break function word to break the loop. you execute the while loop and and consider the while loop to be true, then it ignores the else for what it should do because there is no need to execute else code. so basicly the while loop goes then the else or while loop false so else. with break: the while loop goes;while is positive so break, ignore else. 
+
+# while i < 50:
+#     print(i)
+#     i += 1
+#     break
+# else:
+#     print('done with all the work.')
+
+# ---------------------------------------------------------------
+#  Lesson: While Loops 2
+
