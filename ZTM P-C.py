@@ -1336,3 +1336,18 @@ i = 0
 # ---------------------------------------------------------------
 #  Lesson: While Loops 2
 
+# for simple loops or iterating over iterable object for loops are great. 
+# if you are not sure how long you want loop something, or you want to keep looping until something; a condition. for example; to go trough a email list that you have collected on a website and for each email list you want to send a email. While the list is still keep sending emails. 
+
+# The most used ways for while loop is like this:
+
+# while True:
+#     response = input("say something: ")
+#     if (response == "bye"):
+#         break
+
+# while loops are use fu for tasks like this, where you dont know how long it's gonna take to do it. or for conditional. 
+
+# ---------------------------------------------------------------
+#  Lesson: break, continue, pass
+
