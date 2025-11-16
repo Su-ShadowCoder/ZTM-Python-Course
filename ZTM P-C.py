@@ -1351,3 +1351,19 @@ i = 0
 # ---------------------------------------------------------------
 #  Lesson: break, continue, pass
 
+# The key word break works for the for loops as well. 
+# The continue key word is used for continueing the iteration. 
+# pass is just goig to the next line, you can use this as a place holder. you want to loop through the for loop but we dont know what want to do yet, you can use pass as a temprorary something so you can code further. 
+# my_list = [1,2,3]
+# for item in my_list:
+#     pass
+#     print(item)
+
+
+# i = 0
+# while i < len(my_list)
+#     pass
+#     print(item)
+
+# ---------------------------------------------------------------
+#  Lesson:
