@@ -1366,4 +1366,53 @@ i = 0
 #     print(item)
 
 # ---------------------------------------------------------------
-#  Lesson:
+#  Lesson: Our First GUI
+
+#Exercise!
+#Display the image below to the right hand side where the 0 is going to be ' ', and the 1 is going to be '*'. This will reveal an image!
+
+
+
+# i am going to divide and conquer in sha Allah. 
+# pic_first_row = [0,0,0,1,0,0,0]
+
+# result_row = ""
+
+# for row in picture:
+#   if row == 1:
+#     result_row += "*"
+#   else: 
+#     result_row += " "
+# print(result_row)
+
+
+
+
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0]
+]
+
+
+
+for element in picture:
+  for row in element:
+    row_result = ""
+    while row == 1:
+      row_result += "*"
+      break
+    else:
+      row_result += " "
+    result = row_result
+    print(result) 
+
+
+
+
+
+
+
