@@ -1447,6 +1447,9 @@ i = 0
 
 # excercise solution:
 # i should write a strategy of what i want to do.
+# and use end="" to continue printing in the same row of the iteration(loop)
+
+
 
 # ---------------------------------------------------------------
 #  Lesson: DEVELOPER FUNDAMENTALS: IV
