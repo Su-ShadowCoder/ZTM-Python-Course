@@ -172,7 +172,7 @@
 
 # user_age = iq / 5
 
-# what comes after = here abve, is a expression. it is a piece of code that produces a value ->{iq / 5}. this produces a value that would be asign to user_age. it is not the answer that is the expression but exactly what i asign with the arrow that is the expression. the expression is the cause and what come out of it is the consquense in this situation the value assign to the variable: user_age
+# what comes after = here abve, is a expression. it is a piece of code that produces a value ->{iq / 5}. this produces a value that would be asign to user_age. it is not the answer that is the expression but exactly what i asign with the arcel that is the expression. the expression is the cause and what come out of it is the consquense in this situation the value assign to the variable: user_age
 
 # A Statement on the other hand is a entire line of code in this 
 # example: user_age = iq / 5
@@ -1374,44 +1374,82 @@ i = 0
 
 
 # i am going to divide and conquer in sha Allah. 
-# pic_first_row = [0,0,0,1,0,0,0]
+# pic_first_cel = [0,0,0,1,0,0,0]
 
-# result_row = ""
+# result_cel = ""
 
-# for row in picture:
-#   if row == 1:
-#     result_row += "*"
+# for cel in picture:
+#   if cel == 1:
+#     result_cel += "*"
 #   else: 
-#     result_row += " "
-# print(result_row)
+#     result_cel += " "
+# print(result_cel)
+
+
+# now i going to test how to add two cels so the output prints the image in manner come horizontally with every itteration. 
+
+# two_cel = [
+#   [0,0,0,1,0,0,0],
+#   [0,0,1,1,1,0,0]
+# ]
+
+
+# for element in two_cel:
+#   cel_result = ""
+#   for cel in element:
+#     while cel == 1:
+#       cel_result += "*"
+#       break
+#     else:
+#       cel_result += " "
+#     result = cel_result
+#   print(result) 
+
+# my explanation:
+# so if i want to accumulate a variable i put it outside of a loop of that loop, if i want to reset it i do it within the loop. and then i have to also look out that in a nested loop i do this within the firs loop , outside the first nested loop because i only want to acumulate the value from every cell, and not from every element, that every element keeps getting added, no i want to only add the thinngs in the element, which are the cellss toegher in one line string, print that and start anew, so this happens again for the next element 
+
+# chat-gpt explanation
+# - Accumulate values: define variable outside the loop.
+# - Reset values: define variable inside the loop.
+# - Nested loops:
+#   - Outer loop: bigger units (e.g., cels)
+#   - Inner loop: smaller units (e.g., cells)
+#   - To accumulate inner units but reset per outer unit, define accumulator inside outer loop but outside inner loop.
+# - Concept: build string from inner elements, print after outer iteration, then start fresh.
+# - Key insight: placement of variable initialization controls what persists vs resets.
 
 
 
+# Excercise results:
 
-picture = [
-  [0,0,0,1,0,0,0],
-  [0,0,1,1,1,0,0],
-  [0,1,1,1,1,1,0],
-  [1,1,1,1,1,1,1],
-  [0,0,0,1,0,0,0],
-  [0,0,0,1,0,0,0]
-]
+# picture = [
+#   [0,0,0,1,0,0,0],
+#   [0,0,1,1,1,0,0],
+#   [0,1,1,1,1,1,0],
+#   [1,1,1,1,1,1,1],
+#   [0,0,0,1,0,0,0],
+#   [0,0,0,1,0,0,0]
+# ]
 
-
-
-for element in picture:
-  for row in element:
-    row_result = ""
-    while row == 1:
-      row_result += "*"
-      break
-    else:
-      row_result += " "
-    result = row_result
-    print(result) 
+# for element in picture:
+#   cel_result = ""
+#   for cel in element:
+#     while cel == 1:
+#       cel_result += "*"
+#       break
+#     else:
+#       cel_result += " "
+#   print(cel_result)
 
 
+# Successful!!!!
 
+
+# excercise solution:
+# i should write a strategy of what i want to do.
+
+# ---------------------------------------------------------------
+#  Lesson: DEVELOPER FUNDAMENTALS: IV
 
 
 
