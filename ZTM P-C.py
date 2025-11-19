@@ -1455,5 +1455,35 @@ i = 0
 #  Lesson: DEVELOPER FUNDAMENTALS: IV
 
 
+# What is clean good code?
+
+# Clean
+# Readability  
+# predictability
+# DRY ; Do not repeat yourself
+
+# ---------------------------------------------------------------
+#  Lesson: Exercise: Find Duplicates
+
+#  Exercise: Check for duplicates in list:
+
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+
+
+# .count
+# append()
+
+# i want to check how many time something happends in a list,
+# i do that wit len(), 
+# if something from some_list has more of the same value
+# so i searched on internet, and i can use the count method for lists to count the same value that apear in the list we can use this, that if a element come more that 1 time then add that to the dup list. 
+
+dup_lst = []
+for element in some_list:
+    if some_list.count(element) == 2:
+        dup_lst.append(element)
+print(dup_lst)
+
 
 
