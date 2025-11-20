@@ -1467,9 +1467,7 @@ i = 0
 
 #  Exercise: Check for duplicates in list:
 
-some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
-
-
+# some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 
 # .count
 # append()
@@ -1479,11 +1477,40 @@ some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
 # if something from some_list has more of the same value
 # so i searched on internet, and i can use the count method for lists to count the same value that apear in the list we can use this, that if a element come more that 1 time then add that to the dup list. 
 
-dup_lst = []
-for element in some_list:
-    if some_list.count(element) == 2:
-        dup_lst.append(element)
-print(dup_lst)
+# some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+ 
+# dup_lst = []
+
+# for element in some_list:
+#     if some_list.count(element) >= 2:
+#         if element not in dup_lst:
+#             dup_lst.append(element)
+
+
+# print(dup_lst)
+
+
+# success Alhamdulillah!
 
 
 
+# using a while loop only 
+# some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+# indx_numb = 0
+
+# dup_lst = []
+
+# while indx_numb < len(some_list):
+#         element = some_list[indx_numb]
+#         if some_list.count(element) >= 2:
+#             if element not in dup_lst:
+#                 dup_lst.append(element)
+        
+#         indx_numb += 1
+
+# print(dup_lst)
+
+
+# ---------------------------------------------------------------
+#  Lesson: Exercise:
