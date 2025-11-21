@@ -1513,4 +1513,55 @@ i = 0
 
 
 # ---------------------------------------------------------------
-#  Lesson: Exercise:
+#  Lesson: Functions
+
+# Functions are 
+
+# def is defining a function, you use the same naming
+# protocol to define a function
+
+# Built-in functions = Python gives you ready-made tools (print(), len(), etc.) you can use immediately.
+
+# Your own functions = You define reusable blocks of code that act like your own custom tools for your program.
+
+# def say_hello():
+#     print('hellooooo')
+
+# say_hello()
+
+
+# Dont forget the brackets. after the functions, otherwise 
+# python won't executed it.
+
+# The function is a powerfull to reause the same code 
+# you want to execute without repeating your self. DRY
+# Dont repeat yourself. 
+
+
+# picture = [
+#   [0,0,0,1,0,0,0],
+#   [0,0,1,1,1,0,0],
+#   [0,1,1,1,1,1,0],
+#   [1,1,1,1,1,1,1],
+#   [0,0,0,1,0,0,0],
+#   [0,0,0,1,0,0,0]
+# ]
+
+# def image_printer():
+#     for element in picture:
+#         cel_result = ""
+#         for cel in element:
+#             while cel == 1:
+#                 cel_result += "*"
+#                 break
+#             else:
+#                 cel_result += " "
+#         print(cel_result)
+
+
+# image_printer()
+# image_printer()
+# image_printer()
+
+# you cannot put you custom function above the cunstom function code
+# so you have to try to define functions above rest of the code. 
