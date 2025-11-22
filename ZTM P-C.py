@@ -1565,3 +1565,32 @@ i = 0
 
 # you cannot put you custom function above the cunstom function code
 # so you have to try to define functions above rest of the code. 
+
+
+# ---------------------------------------------------------------
+#  Lesson: Parameters and Arguments
+# parameters
+
+
+def say_hello(name, emoji): 
+    print(f"hellloooo {name} {emoji}")
+
+
+
+# Arguments 
+# say_hello("abdullah", ':)')
+
+# call or invoking the function 
+
+# 
+
+say_hello('Muhammad saw', ':)')
+say_hello('hisam', ':)')
+say_hello('myself', ':)')
+
+
+
+
+
+
+
