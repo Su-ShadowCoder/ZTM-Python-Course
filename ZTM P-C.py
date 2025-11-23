@@ -1594,3 +1594,41 @@ i = 0
 # ---------------------------------------------------------------
 #  Lesson: Default Parameters and Keyword Arguments
 
+
+#Parameters
+# def say_hello(name, emoji): 
+    # print(f"hellloooo {name} {emoji}")
+
+
+
+#  positional Arguments 
+# say_hello("abdullah", ':)')
+
+# positional Argument Are arguements that require to be in the proper position 
+
+
+# There something called keyword argument. it allowes us to not worry about the possition. 
+
+# say_hello(emoji=':)', name='bibi')
+
+# This is bad practices. you should stick to the postional arguments in accordance with the function. 
+# sometime keyword arguments are sometimes confused with default parameters. 
+# keyword arguments increases readability because you know exactly why we say hello. 
+# but positional arguments are still more important to use because you are following the functions and is easy to read, to say it practical it is what the Profesionals do. 
+
+# Default Parameters:
+# def say_hello(name='Darth Vader', emoji='>:D'): 
+#     print(f"hellloooo {name} {emoji}")
+
+# say_hello('abdullah', ':)')
+
+# say_hello()
+
+# When there is nothing in the function specified when used then this allowed there still to have a specified default parameter that was already embedded in the function. It's literally in the name Default Parameter. 
+# Default functions allows us to be little bit more safe to make sure that when we use a variable that we are gonna have a Default answer no matter what. 
+# regarless of how being called. 
+
+
+
+# ---------------------------------------------------------------
+#  Lesson:
