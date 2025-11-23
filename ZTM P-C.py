@@ -1572,8 +1572,8 @@ i = 0
 # parameters
 
 
-def say_hello(name, emoji): 
-    print(f"hellloooo {name} {emoji}")
+# def say_hello(name, emoji): 
+#     print(f"hellloooo {name} {emoji}")
 
 
 
@@ -1584,13 +1584,13 @@ def say_hello(name, emoji):
 
 # 
 
-say_hello('Muhammad saw', ':)')
-say_hello('hisam', ':)')
-say_hello('myself', ':)')
+# say_hello('Muhammad saw', ':)')
+# say_hello('hisam', ':)')
+# say_hello('myself', ':)')
+
+# with this we keep our code DRY and Clean. 
 
 
-
-
-
-
+# ---------------------------------------------------------------
+#  Lesson: Default Parameters and Keyword Arguments
 
