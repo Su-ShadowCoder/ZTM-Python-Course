@@ -1631,4 +1631,83 @@ i = 0
 
 
 # ---------------------------------------------------------------
-#  Lesson:
+#  Lesson: return
+
+
+# def sum(num1, num2):
+#     return num1 + num2
+
+
+# print(sum(10, 5))
+
+# Function can return something, or we can have function that doesn't return anything but modifies something. 
+
+# A Function should do one thing realy wel
+# A Function should return something 
+
+# total = sum(10, 5)
+# print(sum(10,total))
+
+# --------------------------
+
+# Example 1: Original code
+# def sum(num1, num2):
+#     def another_func(num1, num2):
+#         return num1 + num2
+
+# total = sum(10, 20)
+# print(total)  # Output: None
+
+# Explanation:
+# - The outer function 'sum' does not return anything, so by default it returns None.
+# - Defining an inner function 'another_func' does not call it automatically.
+# - You must call the inner function and return its result to get a value.
+
+# Corrected version: Returning the inner function result
+# def sum(num1, num2):
+#     def another_func(num1, num2):
+#         return num1 + num2
+#     return another_func(num1, num2)  # Call and return the inner function's result
+
+# total = sum(10, 20)
+# print(total)  # Output: 30
+
+# Inner Function Return Behavior:
+# - If you call the inner function and return it (return another_func(num1, num2)),
+#   the outer function gives the actual value.
+# - If you return the inner function itself without calling it (return another_func),
+#   the outer function gives the function object (memory reference).
+# - To get the value from the returned function object, you must call it separately.
+
+
+# Key Points:
+# 1. Inner functions need to be called explicitly.
+# 2. Outer functions must return a value if you want to use it outside.
+
+# Optional Variation: Returning the function itself (closure)
+# def sum(num1, num2):
+#     def another_func(num1, num2):
+#         return num1 + num2
+#     return another_func  # Return the function object itself
+
+# func = sum(10, 20)      # 'func' now holds the inner function
+# total = func(10, 20)    # Call it separately
+# print(total)            # Output: 30
+
+# Use case: Useful for functional programming, closures, or reusable inner functions.
+
+# def sum(num1, num2):
+#     def another_func(n1, n2):
+#         return n1 + n2
+#     return another_func(num1, num2) 
+#     return 5
+#     return ('hello')
+
+# total = sum(10, 20)
+# print(total)
+
+# as soon as you return something from a function it exists the function
+# the last to wont be executed. 
+
+
+
