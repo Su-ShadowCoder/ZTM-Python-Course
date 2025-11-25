@@ -1739,4 +1739,24 @@ i = 0
 
 
 # ---------------------------------------------------------------
-#  Lesson:
+#  Lesson: Docstrings
+
+# def test(something="a"):
+#     '''
+#     Info: This function test and prints para a
+#     '''
+#     return something
+
+# # with Docstring it allow us to comment inside of functions in way that another person/co-workers/coleges would be able to know what it is by typing or hovering over the function. 
+# print(test())
+
+# help(test)
+# # we can use the function 'help' to look what something is when it comes to function and the out put will then explain it when there are docstring atached to the function. 
+
+# print(test.__doc__)
+# # This method also allows you to know what the function does and info about it. 
+
+# ---------------------------------------------------------------
+#  Lesson: Clean Code
+
+
