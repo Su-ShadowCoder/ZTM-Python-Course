@@ -1711,3 +1711,27 @@ i = 0
 
 
 
+# ---------------------------------------------------------------
+#  Lesson: Exercise
+
+
+
+# def check_driver_age(age=0):
+#     user_input = input("What is your age?: ")
+#     if  user_input != "":
+#         age = int(user_input)
+
+#     if (age) < 18:
+#         message = "Sorry, you are too young to drive this car. Powering off"
+#     elif (age) > 18:
+#         message = "Powering On. Enjoy the ride!"
+#     elif (age) == 18:
+#         message = "Congratulations on your first year of driving. Enjoy the ride!"
+#     return message
+
+# print(check_driver_age())
+
+
+# ---------------------------------------------------------------
+#  Lesson: Methods vs Functions
+
