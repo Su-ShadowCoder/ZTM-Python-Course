@@ -1735,3 +1735,8 @@ i = 0
 # ---------------------------------------------------------------
 #  Lesson: Methods vs Functions
 
+# what every is on the left of the method owns the method.
+
+
+# ---------------------------------------------------------------
+#  Lesson:
