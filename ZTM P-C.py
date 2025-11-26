@@ -1802,3 +1802,47 @@ i = 0
 
 # ---------------------------------------------------------------
 #  Lesson: *args and **kwargs
+
+# *args **kwargs
+
+# if you do this you will get a error output because you only have assigned 1 parameter. 
+# def super_func(args):
+#     return sum(args)
+
+# super_func(1, 2, 3, 4, 5)
+
+
+# To take everthing into account you can do this:
+
+# def super_func(*args):
+#     print(args)
+#     return sum(args)
+# Note that without putting * on print within the function it becomes a tuple
+
+# print(super_func(1, 2, 3, 4, 5))
+
+#  * Allows us to have multiple arguements without the need to asign multiple parameters.
+
+# **kwargs 
+# def super_func(*args, **kwargs):
+#     total = 0
+#     for items in kwargs.values():
+#         total += items
+#     return sum(args) + total
+# print(super_func(1, 2, 3, 4, 5, num1=5, num2=10)) '''notice that num1 is just a variable name and num2 too. bot are item, as it becomes a dict.'''
+
+# *args and **kwargs are how profesional programmers use in professional field
+# args takes any argumin in incunclusion and kwargs takes any keyword arguement in inclusion and get a dictionary and which comes as key word arg. and then in this case it loops over all items in the key word values. 
+
+# this is very usefull as you now can have as many arguements and keyword arguments as you want in you function. 
+
+
+# def super_func(name, *args, i="hi", **kwargs):
+#     pass
+
+
+
+# !!!-Rule Priority in function: params, *args, default parameters, **kwargs-!!!
+
+# ---------------------------------------------------------------
+#  Lesson: Exercise: Functions
