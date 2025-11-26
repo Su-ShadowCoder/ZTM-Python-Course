@@ -1759,4 +1759,46 @@ i = 0
 # ---------------------------------------------------------------
 #  Lesson: Clean Code
 
+# def is_even(num):
+#     if num % 2 == 0:
+#         return True
+#     else: 
+#         num % 2 != 0
+#         return False
 
+# print(is_even(90))
+
+# so to clean this code, you need to look what you truly need. and int his situation you only need to know if a number is even. so what you do instead is this:
+# def is_even(num):
+#     if num % 2 == 0:
+#         return True
+#     else: 
+#         return False
+
+# print(is_even(90))
+
+
+# you remove the unnecassary condition in else, and just keep return to false, as there are only 2 outcomes so with this code is cleaner. 
+# in fact you dont even need else because if something is true it will do the first return and then it will exit the function. thats why can do this:
+# def is_even(num):
+#     if num % 2 == 0:
+#         return True
+#     return False
+#     ''' if the first condition is not true/False, then  it will go to the next line and return false'''
+
+# print(is_even(90))
+
+# To make it even cleaner and to the point of ridicalousnessm, you can even remove the booleans all togheter. as Expressions in Python evaluate to a boolean True or False.: 
+# def is_even(num):
+#     return num % 2 == 0
+
+# print(is_even(90))
+
+###
+# ⭐clean explanation
+# Expression = something that evaluates to a value.
+# Statement = something that performs an action (assign, loop, define), but doesn’t return a value.
+###
+
+# ---------------------------------------------------------------
+#  Lesson: *args and **kwargs
