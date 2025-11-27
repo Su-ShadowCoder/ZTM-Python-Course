@@ -1846,3 +1846,20 @@ i = 0
 
 # ---------------------------------------------------------------
 #  Lesson: Exercise: Functions
+
+
+# def highest_even(li):
+#     high_numb = []
+#     for element in li:
+#         if element % 2 == 0:
+#             high_numb.append(element)
+
+#     return max(high_numb)
+
+# print(highest_even([10,2,3,4,8,11])) 
+
+
+# remember in order to use append in this sistuation you should have first made a list variable instead just a int, and then you the the condition to check or, you just use max fjunction dude that is looool. just use max. 
+
+# ---------------------------------------------------------------
+#  Lesson: Exercise:
