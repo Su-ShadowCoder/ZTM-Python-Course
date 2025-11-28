@@ -1862,4 +1862,31 @@ i = 0
 # remember in order to use append in this sistuation you should have first made a list variable instead just a int, and then you the the condition to check or, you just use max fjunction dude that is looool. just use max. 
 
 # ---------------------------------------------------------------
-#  Lesson: Exercise:
+#  Lesson: Exercise: Walrus Operator
+
+
+# this is a new feature: 
+
+# := 
+# meet walrus. An operator that assigns values to variables as a part of larger expression. 
+
+# a = 'helllooooooooo'
+
+# if ((n := len(a)) > 10):
+#     print(f"too long {n} elements") 
+
+
+# # instead making a new variable for the len of a you directly say that the result of such espression is n in one line.
+    
+
+# while ((n := len(a)) > 1):
+#     print(n)
+#     a = a[:-1]
+
+# # with the walrus you can take that variable value and calculate that again and make a relation with another code block in this manner. 
+
+# print(a)
+
+# ---------------------------------------------------------------
+#  Lesson: Scope
+
