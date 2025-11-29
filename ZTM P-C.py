@@ -1890,3 +1890,23 @@ i = 0
 # ---------------------------------------------------------------
 #  Lesson: Scope
 
+# Scope = what variables I have access to.
+
+# total = 100
+# This is global. Everything in the file can use it unless a function creates a local variable with the same name.
+
+# if True:
+#     x = 10
+# Python does not have block scope, so x is still global/enclosing scope.
+
+# def some_func():
+#     random = 200
+#     print(x)
+
+# 'random' is local to this function only.
+# 'x' works inside the function because it was created outside of any function.
+# Variables inside a function are NOT accessible outside.
+
+
+# ---------------------------------------------------------------
+#  Lesson: 
