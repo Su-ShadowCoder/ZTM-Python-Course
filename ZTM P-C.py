@@ -1909,4 +1909,13 @@ i = 0
 
 
 # ---------------------------------------------------------------
-#  Lesson: 
+#  Lesson: Scope Rules
+
+# priority:
+#  #1 - start with local scope 
+#  #2 - parent local
+#  #3 - Global
+#  #4 - built in python functions. 
+
+# ---------------------------------------------------------------
+#  Lesson:
