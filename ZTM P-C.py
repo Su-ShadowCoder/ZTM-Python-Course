@@ -1918,4 +1918,109 @@ i = 0
 #  #4 - built in python functions. 
 
 # ---------------------------------------------------------------
-#  Lesson:
+# Lesson: global Keyword
+
+# --- Using a global variable ---
+# This works, but every function that touches "total" depends on
+# invisible shared state. It becomes harder to track and debug.
+
+# total = 0
+
+# def count_global():
+#     global total
+#     total += 1
+#     return total
+
+# print(count_global())
+# print(count_global())
+
+# --- Better approach: pass values explicitly (dependency injection) ---
+# Instead of the function secretly modifying a global variable,
+# we hand the value *into* the function and get back the updated value.
+# This makes the function predictable and easy to test.
+
+# total = 0
+
+# def count(value):
+#     return value + 1
+
+# # Each call returns a new value, no hidden state involved
+# result = count(total)
+# result = count(result)
+# result = count(result)
+
+# print(result)
+
+# or you do this:
+
+# total = 0
+
+# def count(value):
+#     return value + 1
+
+# for _ in range(3):
+#     total = count(total)  # assign new value each time
+
+# print(total)  # 3
+
+# much nicer
+
+# ---------------------------------------------------------------
+# Lesson: nonlocal Keyword
+
+
+# - The `nonlocal` keyword allows a **nested (inner) function** to modify a variable from its **enclosing (outer) function**.
+# - Without `nonlocal`, if you try to assign to a variable inside an inner function, Python will create a **new local variable** instead of changing the outer one.
+# - This is useful when you want to **preserve state** across multiple calls to the inner function without using global variables.
+
+# Key points:
+# 1. `nonlocal` only works for variables in the **nearest enclosing scope**, not globals.
+# 2. It helps manage state **within a function**, keeping the variable out of the global scope.
+# 3. Each call to the inner function can update the outer variable, and the changes persist in the outer function.
+
+# Example:
+
+# def outer():
+#     count = 0  # variable in the outer function
+
+#     def inner():
+#         nonlocal count  # use the outer function's variable
+#         count += 1
+#         return count
+
+#     print(inner())  # 1
+#     print(inner())  # 2
+#     print(count)    # 2, outer variable updated
+
+# outer()
+
+# allows for a local keyword to be able to use unlocally. not always used but somethimes you might want use it for right code. right tool for the right code. 
+
+
+# ---------------------------------------------------------------
+# Lesson:Why Do We Need Scope?
+
+
+# Scope:
+# - Scope determines where a variable can be accessed or modified in a program.
+# - Variables only exist in the scope they are created in unless declared global or nonlocal.
+# - Scope helps organize code and prevents accidental overwriting of variables.
+# - There are three main levels of scope:
+#     1. Local – inside a function or block, accessible only there.
+#     2. Enclosing (nonlocal) – inside a nested function, can access variables from the outer function.
+#     3. Global – accessible throughout the program.
+
+# Resource Problems:
+# - Variables that exist longer than necessary consume memory unnecessarily.
+# - Overusing global variables can cause conflicts if multiple parts of the program try to modify them simultaneously.
+# - Proper scoping limits variable lifetime and visibility, keeping programs efficient and safe.
+# - Using local variables whenever possible reduces memory usage and prevents unexpected errors.
+
+# Summary:
+# Scope controls access and lifetime of variables, and careful use of variables prevents resource problems in programs.
+
+# so that your programs dont hog upp all memory and runs efficiently. 
+
+# ---------------------------------------------------------------
+# End of basic lessons
+# ---------------------------------------------------------------
