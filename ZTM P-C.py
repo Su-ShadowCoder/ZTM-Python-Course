@@ -528,7 +528,7 @@
 
 # evertime you do list slicing you make a copy of the existing list. 
 
-
+=====================================================
 # ---------------------------------------------------------------
 # Lesson: Matrix
 
