@@ -62,67 +62,60 @@
 # /////////////////////
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # ////////////// 2. Data Types & Math Operators \\\\\\\\\\\\\\\\\\\
 
 # Exercises:
 
 # Print the type of the following operations:
 
-# 7 + 2
+# print(type(    7 + 2  )) 
 
-# 7 / 2
+# print(type(    7 / 2  )) 
 
-# 7 // 2
+# print(type(   7 // 2   )) 
 
-# 7 ** 2
+# print(type(   7 ** 2   )) 
 
-# 7 % 2
+# print(type(    7 % 2  )) 
 
-# Use round(), abs(), and other math functions to perform operations.
+# # Use round(), abs(), and other math functions to perform operations.
+
+# print(    abs(7 + 2  )) 
+
+# print(    round(7 / 2  )) 
+
 
 # Create expressions combining multiple operators and predict the output using operator precedence before running the code:
 
 # (2 + 3) * 4 / 2
+# anticipate = 10.0
 
 # 5 + 6 * 2 ** 2 // 3
+# 13
 
 # Challenge question:
 
 # Why does 5 + 4 * 10 // 2 give an integer, but 5 + 4 * 10 / 2 gives a float?
 
+# because int is whole number and float is a number with decimal, or value with decimal 
 
 
 
 
 
 
-# 3. Variables & Expressions
+
+
+
+
+
+
+
+
+
+
+
+# ////////////// 3. Variables & Expressions \\\\\\\\\\\\\\\\\\\
 
 # Exercises:
 
@@ -291,7 +284,7 @@
 
 
 
-# //////////////  \\\\\\\\\\\\\\\\\\\
+
 # //////////////  \\\\\\\\\\\\\\\\\\\
 # //////////////  \\\\\\\\\\\\\\\\\\\
 # //////////////  \\\\\\\\\\\\\\\\\\\
