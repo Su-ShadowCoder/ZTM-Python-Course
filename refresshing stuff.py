@@ -102,191 +102,106 @@
 
 
 
+# Exercise 1: Variables, Expressions & Augmented Assignment
 
+# Assign values to three variables in one line: a, b, c = 10, 20, 30.
 
+# Create a new variable z that calculates a * 2 + b.
 
+# Increment z by 5 using an augmented assignment operator.
 
+# Multiply z by c using another augmented assignment operator.
 
+# Challenge: Explain the difference between an expression and a statement in this context.
 
-
-
-
-
-
-
-
-# ////////////// 3. Variables & Expressions \\\\\\\\\\\\\\\\\\\
-
-# Exercises:
-
-# Assign values to variables using multiple assignment:
+# ✅ This combines Variables, Expressions, and Augmented Assignment.
 
 # a, b, c = 10, 20, 30
 
+# z = a * 2 + b 
 
-# Create an expression using variables and assign it to another variable:
+# z += 5
+# print(z)
 
-# x = 10
-# y = 5
-# z = x * 2 + y
+# z *= c
+# print(z)
 
-
-# Experiment with constants (like PI = 3.14) and try reassigning them. Observe behavior.
-
-# Challenge question:
-
-# What’s the difference between an expression and a statement? Give an example of each.
+# An expression is that you do something with a variable, and a statement means to assign a variable. 
 
 
 
 
+# Exercise 2: Strings & Type Conversion
 
+# Create variables for first name and last name and concatenate them to make a full name.
 
+# Take the sentence "I love Python programming" and:
 
-# 4. Augmented Assignment
+# Extract "Python" using slicing
 
-# Exercises:
+# Extract "I love" using slicing
 
-# Use +=, -=, *=, and /= on a variable. Example:
+# Experiment with immutability: try changing a character in the string. Observe what happens.
 
-# value = 10
-# value += 5  # What is value now?
-# value *= 2
-
-
-# Rewrite normal assignment expressions using augmented assignment operators.
-
-# Challenge question:
-
-# Can you use augmented assignment with strings? Try "Hello " += "World" and see what happens.
-
-
-
-
-
-
-
-
-# 5. Strings & String Manipulation
-
-# Exercises:
-
-# Concatenate first and last name to create a full name.
-
-# Use slicing to extract specific parts of a string:
-
-# text = "I love Python programming"
-
-
-# Extract "Python"
-
-# Extract "I love"
-
-# Experiment with immutability:
-
-# Try changing a character in a string (text[0] = "J") and see what happens.
-
-# Challenge question:
-
-# How can you “modify” a string if it’s immutable?
-
-
-
-
-
-
-
-# 6. Type Conversion
-
-# Exercises:
-
-# Convert integers to strings and vice versa.
-
-# Combine a number and string using conversion:
-
-# age = 25
-# print("I am " + str(age) + " years old")
-
+# Convert an integer age = 25 to a string and print "I am 25 years old" using both concatenation and f-strings.
 
 # Chain conversions like int(str(float(10))) and predict the final type.
 
-# Challenge question:
+# Challenge: Why do you sometimes need type conversion before concatenating?
 
-# Why do you sometimes need to convert types before concatenating?
+# name = "abdullah"
+# last_name = "ibn isa"
+# full_name = name + " " + last_name
+# print(full_name)
 
+# sentc = "I love Python programming"
+# print(sentc[7:13])
+# print(sentc[0:7])
+# sentc[1:] = "y"
+# print(sentc)
 
+# age = 25
+# str(age)
+# print(f"I am {age} years old")
 
-
-
-
-# 7. Escape Sequences
-
-# Exercises:
-
-# Print a sentence with quotes inside: "It’s “awesome”!"
-
-# Use \n to print multiple lines and \t for tab spacing.
-
-# Combine both in a formatted message.
-
-# Challenge question:
-
-# What’s the difference between using single quotes and double quotes for strings in Python?
+# ✅ This combines Strings, String Manipulation, Type Conversion, and Formatted Strings.
 
 
 
 
 
+# Exercise 3: Escape Sequences, Binary & Complex Numbers
 
-# 8. Formatted Strings
+# Print a sentence with quotes inside, e.g., "It’s “awesome”!".
 
-# Exercises:
+# Print multiple lines using \n and tab spacing using \t. Combine both in one formatted message.
 
-# Use f-strings to print a message with variables:
+# Convert an integer (e.g., 5) to binary using bin() and back to an integer.
 
-# name = "Ali"
-# age = 30
+# Create a complex number, e.g., z = 2 + 3j, and print its real and imaginary parts.
 
+# Challenge: What happens when you try to add an integer and a complex number?
 
-# Use .format() to achieve the same output.
+# print("\"It\"s \"awesome\"!\"")
 
-# Practice numbered placeholders and named placeholders in .format().
+# numb = 5
 
-# Challenge question:
+# bin_numb = bin(numb)
 
-# Which method is better for readability: f-string or .format()? Why?
+# real_bin = bin_numb[3:]
 
+# real_i_bin = str(real_bin)
 
+# temp = 0
 
-
-
-
-# 9. Bonus: Binary & Complex Numbers
-
-# Exercises:
-
-# Convert an integer to binary using bin() and back using int().
-
-# Create a complex number and print its real and imaginary parts:
-
-# z = 2 + 3j
+# for element in real_i_bin:
+#     if element != 0:
+#         for index in len(real_i_bin):
+#             decimal = index * 2
 
 
-# Challenge question:
-
-# What happens when you try to add an integer and a complex number?
-
-
+# print(numb)
+# print(bin_numb)
+# print(decimal)
 
 
-
-
-
-
-
-
-# //////////////  \\\\\\\\\\\\\\\\\\\
-# //////////////  \\\\\\\\\\\\\\\\\\\
-# //////////////  \\\\\\\\\\\\\\\\\\\
-# //////////////  \\\\\\\\\\\\\\\\\\\
-# //////////////  \\\\\\\\\\\\\\\\\\\
