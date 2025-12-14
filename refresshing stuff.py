@@ -205,3 +205,319 @@
 # print(decimal)
 
 
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+# Exercise 1: Built-In Functions, Methods, Booleans, and Immutability
+# Objective: Practice len(), string methods, bool(), and understand immutability.
+
+# Create a variable:
+# # quote = "to be or not to be"
+
+
+# Do the following:
+# x Print the length of quote using a built-in function.
+# x Print quote in:
+# x all uppercase capitalized form
+# Find the index of the first occurrence of "be".
+# Replace "be" with "me" and:
+# Print the result
+# Print the original quote again
+# Assign the replaced version to a new variable and print both variables.
+# Create a boolean variable:
+# is_long = len(quote) > 15
+# Print:
+# is_long
+# bool(0)
+# bool(len(quote))
+
+
+# What this tests:
+# Built-in functions vs methods
+# String immutability
+# Boolean evaluation
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# quote = "to be or not to be"
+
+# # print(len(quote))
+
+# # x = quote.upper()
+# # print(x)
+
+# # print(quote.find("be"))
+
+# x = quote.replace("be", "me")
+# print(x)
+# print(quote)
+# is_long = len(quote) > 15
+# print(is_long)
+# bool(0)
+# bool(len(quote))
+
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# Short Exercise: Built-In Functions, Methods, Booleans
+
+# Create a string variable containing a short sentence of your choice.
+
+# Use one built-in function on the string and print the result.
+
+# Use two different string methods on the same string and print their results.
+
+# Create one boolean variable based on a comparison that involves the string.
+
+# Print the boolean variable.
+
+
+# sentence = "It is, what it is."
+
+# u_sent = sentence.upper()
+# print(u_sent)
+# print(bool(u_sent))
+
+# x = u_sent.find("WHAT")
+# print(x)
+
+# y = "apple"
+# z = "moes"
+
+# s = y == z
+
+# print(s)
+
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# Exercise 1: Matrix Access
+
+# Create a 3×3 matrix using a 2D list (numbers of your choice).
+
+# Print the element in the second row, third column.
+
+# Change the element in the first row, first column to a new value.
+
+# Print the entire matrix.
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# matrix = [
+#     [9,8,7],
+#     [7,6,5],
+#     [3,2,1]
+# ]
+
+# print(matrix[1][2])
+
+# matrix[0][0] = 10
+
+# print(matrix)
+
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# Exercise 2: List Methods & Patterns
+# Use this list for reference:
+# fruits = ["Banana", "Apples", "Oranges", "Blueberries"]
+# Remove the first and last item.
+
+# Add "Kiwi" at the end.
+
+# Insert "Mango" at the beginning.
+
+# Count how many "Apples" are in the list.
+
+# Reverse the list.
+
+# Print a copy of the list sorted alphabetically without modifying the original list.
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# fruits = ["Banana", "Apples", "Oranges", "Blueberries"]
+# og = fruits.copy()
+
+# fruits.pop(0)
+# # or fruits.remove("Banana")
+# print(fruits)
+
+# fruits.append("kiwi")
+# fruits.insert(1, "Mango")
+# print(fruits.count("Apples"))
+# print(fruits)
+
+# fruits.reverse()
+# print(fruits)
+
+# print(og)
+# og.sort()
+# print(og)
+
+
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# Exercise 3: List Slicing & Unpacking
+
+# Create a list of numbers from 1 to 10.
+
+# Slice the list to get all even numbers.
+
+# Use unpacking to assign the first two numbers to variables a and b, the last number to z, and the rest to a list rest.
+
+# Print a, b, rest, and z.
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# my_list = []
+# for element in range(1, 11):
+#     my_list.append(element)
+# print(my_list)
+
+# # or 
+# # your_lst = list(range(1,11))
+# # print(your_lst)
+# og = my_list.copy()
+
+# even = my_list[::-2]
+# even.reverse()
+# print(even)
+
+# print(og)
+
+# a, b, *list_rest, z = og
+
+# print(a)
+# print(b)
+# print(z)
+# print(list_rest)
+
+
+
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# Exercise 4: Dictionary Basics
+
+# Create a dictionary representing a user with keys: "name", "age", and "basket" (a list of items).
+
+# Access and print the "age".
+
+# Add a new key "is_active" with a boolean value.
+
+# Update --> very misleading btw, you should have told not to use update function but to update the list. the "basket" by adding one new item.
+
+# Print all keys and all values separately.
+# # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# this_dict = {
+#     'name':'Jan',
+#     'age':24,
+#     'basket':["powerranger", "supersoldier", "pipilangkous"]
+# }
+
+# print(this_dict.get('age'))
+
+# this_dict["is_active"] = True
+
+# this_dict['basket'].append("actionman")
+
+# print(this_dict.items())
+
+# # # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# # Exercise 5: Dictionary & List Combination
+
+# # Create a list of 2 dictionaries, each representing a user (name and age).
+
+# # Access the age of the second user.
+
+# # Add a new key "country" to the first user.
+
+# # Print the entire list of dictionaries.
+# # # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# lst_of_dicts = [{
+#     'name':'sam',
+#     'age': 19
+# }, {
+#     'name':'clover',
+#     'age': 20 }]
+
+# print(lst_of_dicts[1].get('age'))
+
+# lst_of_dicts[0].update({'country': None})
+
+# print(lst_of_dicts)
+
+# # # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ====================================================
+# Exercise 1: Tuples & Sets
+# ====================================================
+
+# 1. Create a tuple with 6 numbers of your choice.
+
+# 2. Check if the number 3 is in the tuple and print the result.
+
+# 3. Use tuple unpacking to assign the first two numbers to 'a' and 'b', and the rest to 'rest'. Print them.
+
+# 4. Use a tuple method to count how many times the first number appears in the tuple.
+
+# 5. Create a set from the tuple.
+
+# 6. Add a new number to the set and remove a number of your choice.
+
+# 7. Create another set {4,5,6,7,8} and print:
+#    - The union of the two sets
+#    - The intersection of the two sets
+#    - Whether your first set is a subset of the second set
+
+
+# ====================================================
+# Exercise 2: Conditional Logic & Ternary
+# ====================================================
+
+# 1. Create two boolean variables: 'is_old' and 'has_license'.
+
+# 2. Write an if/elif/else statement to print:
+#    - "You can drive" if is_old and has_license are True
+#    - "You need a license" if is_old is True but has_license is False
+#    - "You are too young" otherwise
+
+# 3. Create variables 'username' and 'password' with any values.
+#    Use a conditional statement to print "Welcome back!" only if both are truthy.
+
+# 4. Create variables 'is_student' and 'has_ticket'.
+#    Use a ternary operator to assign 'status_message':
+#    - "Access granted" if both are True
+#    - "Check requirements" if only one is True
+#    - "Access denied" if both are False
+#    Print 'status_message'.
