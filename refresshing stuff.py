@@ -443,42 +443,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # ====================================================
 # Exercise 1: Tuples & Sets
 # ====================================================
@@ -501,19 +465,82 @@
 #    - Whether your first set is a subset of the second set
 
 
+
+# tpl = tuple(range(1, 7))
+# print(tpl)
+
+# if 3 in tpl:
+#     print(True)
+
+# (a, b, *rest) = tpl
+# print(a)
+# print(b)
+# print(rest)
+
+# x = tpl.count(a)
+# print(x)
+
+# y = set(tpl)
+# print(y)
+
+# lst_tpl = list(tpl)
+# print(lst_tpl)
+# lst_tpl.append(10)
+# lst_tpl.remove(1)
+# print(lst_tpl)
+
+# st_st = set(range(4, 9))
+# print(st_st)
+
+# ult_st = st_st.union(y)
+# print(ult_st)
+
+# i = y.intersection(st_st)
+# print(i)
+
+# s = y.issubset(st_st)
+# print(s)
+
+# if i switch , then it also comes false 
+
+
+
 # ====================================================
 # Exercise 2: Conditional Logic & Ternary
 # ====================================================
 
-# 1. Create two boolean variables: 'is_old' and 'has_license'.
+# # 1. Create two boolean variables: 'is_old' and 'has_license'.
 
-# 2. Write an if/elif/else statement to print:
-#    - "You can drive" if is_old and has_license are True
-#    - "You need a license" if is_old is True but has_license is False
-#    - "You are too young" otherwise
+# is_old = True
+# has_licence = True
+
+# # 2. Write an if/elif/else statement to print:
+# #    - "You can drive" if is_old and has_license are True
+# #    - "You need a license" if is_old is True but has_license is False
+# #    - "You are too young" otherwise
+
+# if is_old and has_licence:
+#     print(f"You can drive")
+# elif is_old == True and has_licence == False:
+#     print(f"You need a license")
+# else:
+#     print(f"You are too young")
+
 
 # 3. Create variables 'username' and 'password' with any values.
 #    Use a conditional statement to print "Welcome back!" only if both are truthy.
+
+# user_name = "beastcatcher69"
+# pass_word = "croft"
+
+# Authentication_usr = input(f"Please enter your username\n")
+# Authentication_psswrd = input(f"Please enter your password\n")
+
+# if Authentication_usr == user_name and Authentication_psswrd == pass_word:
+#     print("Welcome back!")
+# else:
+#     print("Please try again...")
+
 
 # 4. Create variables 'is_student' and 'has_ticket'.
 #    Use a ternary operator to assign 'status_message':
@@ -521,3 +548,13 @@
 #    - "Check requirements" if only one is True
 #    - "Access denied" if both are False
 #    Print 'status_message'.
+
+# is_student = False
+# has_ticket = False 
+
+# if is_student and has_ticket: status_message = "Access granted"
+# elif is_student or has_ticket: status_message ="Check requirements"
+# else: status_message = "Access denied"
+
+# print(status_message)
+
