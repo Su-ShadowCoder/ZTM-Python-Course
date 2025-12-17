@@ -558,3 +558,160 @@
 
 # print(status_message)
 
+
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+# ====================================================
+# Exercise 1: User Activity Analyzer
+# ====================================================
+
+# You are given a list of tuples.
+# Each tuple represents a user in the form:
+# (username, age, country, is_active)
+
+# users = [
+#     ("ali", 22, "NL", True),
+#     ("sara", 17, "BE", False),
+#     ("omar", 30, "NL", True),
+#     ("fatima", 22, "DE", True),
+#     ("ali", 22, "NL", True)
+# ]
+
+# Tasks:
+
+# 1. Loop through the users and print only the usernames of active users.
+
+
+# for element in users:
+#     if element[3]:
+#         print(element[0])
+
+# 2. Create a set of all unique countries represented in the list.
+
+# countries = []
+# for element in users:
+#     countries.append(element[2])
+
+
+# st_countries = set(countries)
+# print(st_countries)
+
+
+# 3. Count how many users are adults (age >= 18).
+
+# count = 0
+
+# for element in users:
+#     if element[1] >= 18:
+#         count += 1
+
+# print(count)
+
+
+# 4. Detect duplicate users based on username (no username should appear twice).
+#    Store duplicate usernames in a list without repeats.
+
+# username = []
+# for element in users:
+#     username.append(element[0])
+# print(username)
+
+# non_dup_usrnames = set(username)
+# print(non_dup_usrnames)
+
+# l_non_dup_usrn = list(non_dup_usrnames)
+# print(l_non_dup_usrn)
+
+
+# for alement in username:
+#     new_dup = []
+#     for element in l_non_dup_usrn:
+#         if alement == element:
+#             new_dup.append(alement)
+
+# print(new_dup)
+
+# 5. Using enumerate(), print the index and username of each user
+#    in the format: "Index X: username"
+
+# for i, name in enumerate(username):
+#     print(f"Index {i}: {name}")
+
+# 6. Create a dictionary where:
+#    - keys are countries
+#    - values are lists of usernames from that country
+
+# result = {country_: user_name for user_name, _, country_, _ in users}
+
+# print(result)
+
+
+# 7. Use a conditional expression (ternary operator) to print:
+#    "All users inactive" or "At least one active user"
+#    based on the data.
+
+# users = [
+#     ("ali", 22, "NL", True),
+#     ("sara", 17, "BE", False),
+#     ("omar", 30, "NL", True),
+#     ("fatima", 22, "DE", True),
+#     ("ali", 22, "NL", True)
+# ]
+
+# has_active_user = any(user[3] for user in users)
+
+# print("At least one active user" if has_active_user else "All users inactive")
+
+# ====================================================
+# Exercise 2: System Access & Validation Loop
+# ====================================================
+
+# You are building a simple access-control simulation.
+
+# Given:
+allowed_ids = (101, 102, 103, 104)
+banned_ids = {999, 666}
+
+# Tasks:
+
+# 1. Use a while loop to repeatedly ask the user for an ID (input).
+#    - Stop the loop if the user enters "exit".
+
+usr_inp = int(input("Please enter your ID. To exit,-> enter:exit\n"))
+
+id_
+
+while usr_inp != "exit":
+
+
+    if usr_inp in allowed_ids:
+        print(F"Access granted. Welcome back user {usr_inp}")
+    elif usr_inp in banned_ids:
+        print("Access permanently denied")
+        break
+    else:
+        print("invalid input")
+    usr_inp = int(input("Please enter your ID. To exit,-> enter:exit\n"))
+        
+
+
+# 2. Convert the input safely to an integer.
+#    - If conversion fails, print "Invalid input" and continue.
+
+# 3. If the ID is in banned_ids:
+#    - Print "Access permanently denied"
+#    - Break the loop immediately.
+
+# 4. If the ID is in allowed_ids:
+#    - Print "Access granted"
+#    - Continue asking for IDs.
+
+# 5. If the ID is neither allowed nor banned:
+#    - Print "Access denied"
+
+# 6. Track all attempted IDs in a list.
+
+# 7. After the loop ends:
+#    - Print the total number of attempts
+#    - Print the unique attempted IDs (use a set)
+#    - Print whether any banned ID was ever attempted (True / False)
