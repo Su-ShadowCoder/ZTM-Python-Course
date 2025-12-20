@@ -955,3 +955,231 @@ words = ["hi", "hey", "hello"]
 # //////////////////////////////////////////////////////////////
 
 
+# //////////////////////////////////////////////////////////////
+# Exercise 1: Function & Parameters
+
+# Goal: Define a reusable function with parameters and default arguments.
+
+# Create a function called greet_user that takes two parameters: name and emoji.
+
+# Set default values: name="Guest", emoji=":)".
+
+# The function should print: "Hello [name] [emoji]".
+
+# Call the function three times:
+
+# Once with no arguments.
+
+# Once with only a name.
+
+# Once with both name and emoji.
+
+
+# def greet_user(name="Guest", emoji=":)"):
+#     print(f"Hello {name} {emoji}")
+
+# greet_user()
+# greet_user("abdullah")
+# greet_user("abdullah", "XD")
+
+# //////////////////////////////////////////////////////////////
+
+# Exercise: Return & Inner Function – Sum Example
+
+# Goal: Practice defining inner functions and returning their results from an outer function.
+
+# Instructions:
+
+# Create a function called sum_numbers(a, b).
+
+# Inside sum_numbers, define an inner function inner_sum(x, y) that returns the sum of x and y.
+
+# The outer function sum_numbers should call the inner function with a and b and return its result.
+
+# Call sum_numbers with any two numbers and print the result.
+
+# def sum_numbers(a, b):
+#     def inner_sum(x, y):
+#         return x + y
+#     return inner_sum(a, b)
+
+# print(sum_numbers(3, 5))
+
+# //////////////////////////////////////////////////////////////
+# Exercise 3: Scope & Counters
+
+# Goal: Understand local, nonlocal, and global scope.
+
+# Define an outer function counter() with a local variable count = 0.
+
+# Inside it, define an inner function increment() that uses nonlocal count and adds 1 to it, returning count.
+
+# Call the inner function three times and print its result each time.
+
+# Outside the outer function, try printing count (observe what happens).
+
+
+# def counter():
+#     count = 0
+    
+#     def increment():
+#         nonlocal count
+#         count += 1
+#         return count
+#     return increment
+
+
+
+# my_counter = counter(10)
+# print(my_counter())
+# print(my_counter())
+# print(my_counter())
+
+
+# //////////////////////////////////////////////////////////////
+
+# Exercise 1: Function & Default Parameters – Alert Message
+
+# Goal: Practice creating a function with defaults in a SOC context.
+
+# Instructions:
+
+# Create a function send_alert(message, severity) with default values:
+
+# message="Suspicious activity detected"
+
+# severity="Medium"
+
+# The function should print: "ALERT! [severity] - [message]".
+
+# Call the function three times:
+
+# Once with no arguments.
+
+# Once with only message.
+
+# Once with both message and severity.
+
+
+# def send_alert(message="Suspicious activity detected", severity="Medium"):
+#     print(f"ALERT! {severity} - {message}")
+
+# send_alert()
+# send_alert("Network related activity detected", )
+# send_alert("Port packets detected", "High")
+
+# //////////////////////////////////////////////////////////////
+
+# Exercise 2: Inner Function & Return – Login Attempt
+
+# Goal: Practice using an inner function and returning its result with a security twist.
+
+# Instructions:
+
+# Create a function login_attempt(user, max_attempts) that keeps track of failed login attempts.
+
+# Inside it, define an inner function attempt(n) that calculates remaining attempts:
+
+# Remaining attempts = max_attempts - n
+
+# The outer function should call the inner function with the number of attempts so far and return the remaining attempts.
+
+# Test it with a user and print remaining attempts for 3 failed attempts.
+
+
+# def login_attempt(user, max_attempt=3):
+#     attempts = 0
+#     def remaining_attempt():
+#         nonlocal attempts
+#         if attempts >= max_attempt:
+#             print(f"Stop! {user} is not allowed to login anymore!")
+#             return None
+#         attempts += 1
+#         print(f"{(max_attempt - attempts) + 1} login attempts remaining for {user}")
+#         return max_attempt - attempts
+#     return remaining_attempt
+
+# tracker = login_attempt("user")
+
+# tracker()
+# tracker()
+# tracker()
+# tracker()
+
+# //////////////////////////////////////////////////////////////
+
+
+# def failed_login_tracker(max_attempts=3):
+#     failed_attempts = 0
+#     def register_failure():
+#         nonlocal failed_attempts
+#         failed_attempts += 1
+#         if failed_attempts >= max_attempts:
+#             return "Acount locked due to suspicious activity"
+#         return failed_attempts
+#     return register_failure
+
+# tracker = failed_login_tracker()
+
+
+# print(tracker())
+# print(tracker())
+# print(tracker())
+# print(tracker())
+# //////////////////////////////////////////////////////////////
+
+
+# def alert_tracker(treshold=5):
+#     regrd_alerts = 0
+#     def register_alert():
+#         nonlocal regrd_alerts
+#         regrd_alerts += 1
+#         if regrd_alerts >= treshold:
+#             return "Maximum alerts reached!"
+#         return regrd_alerts
+#     return register_alert
+
+# tracker = alert_tracker()
+
+# print(tracker())
+# print(tracker())
+# print(tracker())
+# print(tracker())
+# print(tracker())
+
+# //////////////////////////////////////////////////////////////
+
+
+# Exercise 3: Scope & Counters – IP Connection Tracker
+
+# Goal: Understand local, nonlocal, and global scope in a network monitoring context.
+
+# Instructions:
+
+# Define an outer function ip_tracker(start_connections=0) with a local variable connections initialized to start_connections.
+
+# Inside it, define an inner function new_connection() that uses nonlocal connections and adds 1 each time a new IP connects.
+
+# The outer function should return the inner function.
+
+# Create a tracker and simulate 5 new IP connections, printing the total connections each time.
+
+# Try to print connections outside the outer function and observe the behavior.
+# //////////////////////////////////////////////////////////////
+
+def ip_tracker(start_connections=0):
+    connection = start_connections
+    def new_connection():
+        nonlocal connection
+        connection += 1
+        return connection
+    return new_connection
+
+connection_tracker = ip_tracker()
+
+print(connection_tracker())
+print(connection_tracker())
+print(connection_tracker())
+print(connection_tracker())
+print(connection_tracker())
+print(connecttion)
