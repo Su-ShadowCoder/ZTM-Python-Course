@@ -668,32 +668,41 @@
 
 # You are building a simple access-control simulation.
 
-# Given:
-allowed_ids = (101, 102, 103, 104)
-banned_ids = {999, 666}
+# # Given:
+# allowed_ids = (101, 102, 103, 104)
+# banned_ids = {999, 666}
 
-# Tasks:
+# # Tasks:
 
-# 1. Use a while loop to repeatedly ask the user for an ID (input).
-#    - Stop the loop if the user enters "exit".
+# # 1. Use a while loop to repeatedly ask the user for an ID (input).
+# #    - Stop the loop if the user enters "exit".
 
-usr_inp = int(input("Please enter your ID. To exit,-> enter:exit\n"))
+# usr_inp = int(input("Please enter your ID. To exit,-> enter:exit\n"))
 
-id_
-
-while usr_inp != "exit":
+# id_track_lst = []
 
 
-    if usr_inp in allowed_ids:
-        print(F"Access granted. Welcome back user {usr_inp}")
-    elif usr_inp in banned_ids:
-        print("Access permanently denied")
-        break
-    else:
-        print("invalid input")
-    usr_inp = int(input("Please enter your ID. To exit,-> enter:exit\n"))
+# while usr_inp != "exit":
+#     id_track_lst.append(usr_inp)
+
+#     if usr_inp in allowed_ids:
+#         print(F"Access granted. Welcome back user {usr_inp}")
+#     elif usr_inp in banned_ids:
+#         print("Access permanently denied")
+#         break
+#     else:
+#         print("invalid input")
+#     usr_inp = int(input("Please enter your ID. To exit,-> enter:exit\n"))
         
 
+# print(id_track_lst)
+# print(len(id_track_lst))
+# print(set(id_track_lst))
+
+# if usr_inp in banned_ids:
+#     print(True)
+# else:
+#     print(False)
 
 # 2. Convert the input safely to an integer.
 #    - If conversion fails, print "Invalid input" and continue.
@@ -715,3 +724,234 @@ while usr_inp != "exit":
 #    - Print the total number of attempts
 #    - Print the unique attempted IDs (use a set)
 #    - Print whether any banned ID was ever attempted (True / False)
+
+# ////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+# # Drill Exercise 1: Login Monitor (Collections + State)
+# logins = [
+#     ("adam", "NL", True),
+#     ("sara", "BE", False),
+#     ("adam", "NL", True),
+#     ("yusuf", "DE", False),
+#     ("sara", "BE", False)
+# ]
+
+# # the login data list is a list of tuples.
+# # login = (username, country, success)
+
+# for user in logins:
+#     if user[2]:
+#         print(user[0])
+
+# l_country = []
+# for element in logins:
+#     l_country.append(element[1])
+
+# s_country = set(l_country)
+# print(s_country)
+
+# track_failed_logins = []
+# for element in logins:
+#     if element[2] == False:
+#         track_failed_logins.append(element)
+# print(len(track_failed_logins))
+
+
+# seen = set()
+# detected = []
+# for element in logins:
+#     if element in seen:
+#         detected.append(element)
+#     else:
+#         seen.add(element)
+# print(detected)
+
+
+# special_dict = {country: name for  name, country, Activity in logins}
+# print(special_dict)
+
+# print("At least one successful login" if any(logins[2]) else "All logins failed")
+
+# ~Print usernames of users who successfully logged in.
+
+# ~Create a set of all countries.
+
+# ~Count how many failed logins occurred.
+
+# ~Detect usernames that attempted login more than once.
+
+# ~Store duplicates once.
+
+# Create a dictionary:
+
+# keys = country
+
+# values = list of usernames from that country
+
+# Print:
+
+# "All logins failed" or "At least one successful login"
+
+# Constraints:
+
+# No external libraries
+
+# No dictionary overwriting
+
+# Duplicate logic must be frequency-based
+
+
+# ////////////////////////////////////////////////////////////////////////////
+
+# Exercise 1: String & Nested Loop Drill
+
+# Goal: Iterate over a string and nested lists.
+
+# Create a list of strings:
+
+words = ["hi", "hey", "hello"]
+
+
+# For each word, print each character on a new line.
+
+# After printing all characters of a word, print "Done with [word]".
+
+# Use nested loops and accumulation concepts.
+
+# Example output for "hi":
+
+# h
+# i
+# Done with hi
+
+
+# for element in words:
+#     for letter in element:
+#         print(letter)
+#     print(f"done with {element}")
+
+
+
+# Exercise 2: Simple Counting & Duplicates
+
+# Goal: Practice loops, accumulation, .count(), and detecting duplicates.
+
+# Given a list:
+
+# letters = ['a', 'b', 'c', 'b', 'd', 'a', 'e']
+
+
+# Count how many times each element occurs and print in the format:
+
+# a appears 2 times
+# b appears 2 times
+# c appears 1 time
+
+
+# Create a duplicate list containing elements that appear more than once (without repeats).
+
+# Print the duplicate list at the end.
+
+# letters = ['a', 'b', 'c', 'b', 'd', 'a', 'e']
+
+# sngle_letters = []
+# for element in set(letters):
+#     sngle_letters += element
+
+# srtd_sngl_let = sorted(sngle_letters)
+# print(srtd_sngl_let)
+
+# for element in letters:
+#     if element in srtd_sngl_let:
+#         print(f" {element} appears {letters.count(element)}")
+# i tried to order but it just too much work and i dont know how to do it 
+
+# dup_lst = []
+
+# for element in letters:
+#     if letters.count(element) > 1:
+#         if element not in dup_lst:
+#             dup_lst.append(element)
+
+# print(dup_lst)
+
+# # industry style:
+# letters = ['a', 'b', 'c', 'b', 'd', 'a', 'e']
+
+# seen = set()
+# duplicates = []
+
+# for element in letters:
+#     if element in seen:
+#         if element not in duplicates:
+#             duplicates.append(element)
+#     else:
+#         seen.add(element)
+
+# print(duplicates)
+
+
+# Exercise 3: While Loop & Range
+
+# Goal: Practice while loops, break, continue, and range.
+
+# Initialize a variable i = 0.
+
+# While i < 20:
+
+# If i is divisible by 3, skip printing it (continue).
+
+# Otherwise, print i.
+
+# Stop the loop completely if i equals 17 (break).
+
+# Increment i appropriately each iteration.
+
+# Use else to print "Loop finished normally" if the loop ends without break.
+
+# i = 0
+
+# while i < 20:
+#     i += 1
+#     if i % 3:
+#         continue
+#     else:
+#         print(i)
+
+# //////////////////////////////////////////////////////////////
+
+# simple While Loop Exercise
+# Goal
+
+# Use a while loop to print numbers from 1 to 10, but:
+
+# Skip numbers divisible by 4 (continue)
+
+# Stop completely if the number is 9 (break)
+
+# Use else to print "Loop finished normally" if it ends without break
+
+
+
+# i = 0
+
+# while i < 10:
+#     if i == 9:
+#         break
+#     if i % 4 == 0:
+#         i += 1
+#         continue
+#     print(i)
+#     i += 1
+# else:
+#     print("Loop finished normally")
+
+# //////////////////////////////////////////////////////////////
+
+
