@@ -1167,19 +1167,21 @@ words = ["hi", "hey", "hello"]
 # Try to print connections outside the outer function and observe the behavior.
 # //////////////////////////////////////////////////////////////
 
-def ip_tracker(start_connections=0):
-    connection = start_connections
-    def new_connection():
-        nonlocal connection
-        connection += 1
-        return connection
-    return new_connection
+# def ip_tracker(start_connections=0):
+#     connection = start_connections
+#     def new_connection():
+#         nonlocal connection
+#         connection += 1
+#         return connection
+#     return new_connection
 
-connection_tracker = ip_tracker()
+# connection_tracker = ip_tracker()
 
-print(connection_tracker())
-print(connection_tracker())
-print(connection_tracker())
-print(connection_tracker())
-print(connection_tracker())
-print(connecttion)
+# print(connection_tracker())
+# print(connection_tracker())
+# print(connection_tracker())
+# print(connection_tracker())
+# print(connection_tracker())
+# print(connecttion) # it give a error, as if the connection variable is not available outside of the outer function. which makes sense because the nonlocal is only withing the inner function. 
+
+
