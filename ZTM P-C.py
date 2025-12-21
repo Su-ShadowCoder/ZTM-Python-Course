@@ -351,7 +351,7 @@
 # you cant re asign part of a string, once created it exist like that in 
 # that form. The only way to create is to change into something new and not while slicing. 
 
- ----------------------------------------------------------------
+# ----------------------------------------------------------------
 # Lesson: Built-In Functions + Methods
 
 # greet = "hellloooo"
@@ -528,7 +528,7 @@
 
 # evertime you do list slicing you make a copy of the existing list. 
 
-# =====================================================
+#  =====================================================
 # ---------------------------------------------------------------
 # Lesson: Matrix
 
@@ -851,7 +851,7 @@
 # print(user.update({'ages':55}))
 # print(user)
 
-# ---------------------------------------------------------------
+#  ---------------------------------------------------------------
 #  Lesson: Tuples
 
 # Tuple
